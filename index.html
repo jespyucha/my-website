@@ -4,168 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jespyucha | Self-Learning Journey</title>
-    <style>
-        /* APPLE-STYLE FONTS & COLORS */
-        :root {
-            --bg-color: #f2e8df; /* Minimalist Beige */
-            --text-main: #4a3728; /* Dark Brown from your design */
-            --accent: #d48c45; /* Orange accent for active links */
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-            line-height: 1.6;
-        }
-
-        /* NAVIGATION */
-        nav {
-            background: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .logo {
-            font-family: serif; /* Matches your elegant serif logo */
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-main);
-            margin: 0 15px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        nav a:hover, nav a.active {
-            color: var(--accent);
-        }
-
-        /* HERO SECTION */
-        .section {
-            padding: 80px 10%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-family: serif;
-            margin-bottom: 0;
-        }
-
-        .underline {
-            width: 300px;
-            height: 4px;
-            background: var(--text-main);
-            margin-top: 10px;
-        }
-
-        /* GRID LAYOUT FOR ABOUT/PODCAST */
-        .flex-container {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .flex-text { flex: 1; min-width: 300px; font-size: 1.5rem; }
-        .flex-image { flex: 1; min-width: 300px; }
-
-        img {
-            width: 100%;
-            border-radius: 4px;
-        }
-
-        /* LIST STYLES (BLOG/PODCAST) */
-        .list-item {
-            margin: 20px 0;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .list-item:hover { transform: translateX(10px); color: var(--accent); }
-
-        /* FOOTER */
-        footer {
-            padding: 100px 10% 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .social-links a {
-            display: block;
-            text-decoration: none;
-            color: var(--text-main);
-            text-align: right;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <nav>
         <div class="logo">jespyucha</div>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#blog">Blog</a>
-        <a href="#podcast">Podcast</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#blog">Blog</a>
+            <a href="#podcast">Podcast</a>
+        </div>
     </nav>
 
-    <div id="home" class="section">
-        <p style="font-size: 1.5rem;">Hello there, I'm Jespyucha.</p>
+    <section id="home" class="section">
+        <p style="font-size: 1.5rem; margin-bottom: 0;">Hello there, I'm Jespyucha.</p>
         <h1>Uncovering<br>self-learning journey!</h1>
         <div class="underline"></div>
-    </div>
+    </section>
 
-    <div id="about" class="section">
+    <section id="about" class="section">
         <div class="flex-container">
             <div class="flex-text">
                 Create with clarity and precision, focusing on providing value to the reader.
             </div>
             <div class="flex-image">
-                <img src="portrait.jpg" alt="Jespyucha">
+                <img src="assets/img/portrait.jpg" alt="Jespyucha Portrait">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="blog" class="section">
-        <h2>Blog</h2>
-        <div class="list-item">• can we self learn in this digital era? <strong>read more...</strong></div>
-        <div class="list-item">• what internet and technologies made us? <strong>read more...</strong></div>
-        <div class="list-item">• who's fault is this? time vs productivity <strong>read more...</strong></div>
-    </div>
+    <section id="blog" class="section">
+        <h2 style="text-transform: uppercase; letter-spacing: 2px;">Blog</h2>
+        <a href="#" class="list-item">• can we self learn in this digital era? <strong>read more...</strong></a>
+        <a href="#" class="list-item">• what internet and technologies made us? <strong>read more...</strong></a>
+        <a href="#" class="list-item">• who's fault is this? time vs productivity <strong>read more...</strong></a>
+    </section>
 
-    <div id="podcast" class="section">
+    <section id="podcast" class="section">
         <div class="flex-container">
             <div class="flex-image">
-                <img src="podcast-cover.jpg" alt="Podcast">
-                <h3 style="font-family: serif;">midday-coffee notes</h3>
+                <img src="assets/img/podcast-cover.jpg" alt="Podcast Cover">
+                <h3 style="font-family: serif; margin-top: 15px; font-size: 1.8rem;">midday-coffee notes</h3>
                 <p>with jespyucha</p>
             </div>
             <div class="flex-text">
-                Here, i post on my self learning journey tips tricks and public learning ideas from me.
-                <div class="list-item" style="font-size: 1rem; margin-top: 30px;">001: can we self learn in this digital era? <strong>play.</strong></div>
+                <p style="font-size: 1.2rem;">Here, i post on my self learning journey tips tricks and public learning ideas from me.</p>
+                <div style="margin-top: 40px;">
+                    <a href="#" class="list-item" style="font-size: 1.1rem;">001: can we self learn in this digital era? <strong>play.</strong></a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div>Inquires</div>
-        <div class="social-links">
-            <a href="#">Youtube</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Tiktok</a>
+        <div class="footer-left">
+            Inquires
         </div>
-    </footer>
-
-</body>
-</html>
+        <div class="social-
