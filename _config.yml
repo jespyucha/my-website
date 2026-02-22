@@ -1,3 +1,4 @@
 permalink: pretty
 theme: []
-plugins: [jekyll-sitemap]
+plugins:
+  - jekyll-sitemap
