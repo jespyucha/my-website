@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquidity Cycles and Tactical Positioning | jespyucha</title>
+  <meta name="description" content="Institutional-style macro essay on liquidity cycles and tactical risk positioning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { base: '#F7F7F5', charcoal: '#0F172A', ink: '#1F2937', trustBlue: '#2563EB', traderGreen: '#059669' },
+          fontFamily: { serif: ['Libre Baskerville', 'serif'], sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-base text-ink dark:bg-charcoal dark:text-gray-100 font-sans">
+  <div id="progressBar" class="fixed top-0 left-0 h-1 bg-traderGreen z-50" style="width:0%"></div>
+
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-charcoal/95 backdrop-blur">
+    <nav class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+      <a href="/" class="font-serif text-2xl">jespyucha</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/">Home</a>
+        <a href="/article">Article</a>
+        <button id="themeToggle" class="px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600 text-xs" aria-label="Toggle dark mode">Dark</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <p class="uppercase tracking-[0.2em] text-xs text-gray-500">Economic Theory • April 2026</p>
+    <h1 class="font-serif text-4xl sm:text-5xl leading-tight mt-4">Liquidity Cycles and Tactical Positioning in a Post-ZIRP World</h1>
+    <p class="mt-5 text-gray-700 dark:text-gray-300">A framework-first guide to translating macro conditions into executable risk decisions.</p>
+
+    <div class="mt-8 py-3 border-y border-gray-200 dark:border-gray-700 flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-300">
+      <span>By Jespyucha</span><span>•</span><span id="readingTime">8 min read</span><span>•</span><span>Macro / Risk / Execution</span>
+    </div>
+
+    <article id="articleContent" class="mt-10 space-y-8 leading-8 text-[1.06rem]">
+      <section>
+        <p>Liquidity drives opportunity sets. When policy stance and credit conditions shift at the margin, asset repricing can become nonlinear. The edge comes from framework discipline, not prediction theater.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">1) Start with the policy impulse</h2>
+        <p>Track second-order change in liquidity, real rates, and funding stress. By the time consensus agrees on trend direction, most asymmetric repricing is already underway.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">2) Verify with cross-asset behavior</h2>
+        <p>Use rates volatility, credit spreads, commodity persistence, and equity breadth as a confirmation set. Regime signals become robust when they cohere across multiple instruments.</p>
+      </section>
+
+      <section class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/40 p-6">
+        <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Mid-Article Newsletter</p>
+        <h3 class="font-serif text-2xl">Get the Weekly Macro Setup</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">One framework. One chart. One risk adjustment.</p>
+        <form class="mt-4 flex flex-col sm:flex-row gap-3" aria-label="Mid-article newsletter signup">
+          <label for="articleEmail" class="sr-only">Email</label>
+          <input id="articleEmail" name="articleEmail" type="email" required placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
+          <button type="submit" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Subscribe</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">3) Translate thesis into risk architecture</h2>
+        <p>Define invalidation, exposure limits, scenario weights, and holding horizon before entry. Thesis quality is irrelevant if execution protocol is inconsistent.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">Closing</h2>
+        <p>Compounded performance follows process consistency. Build systems that survive uncertainty rather than narratives that assume certainty.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-sm text-gray-600 dark:text-gray-300">© 2026 Jespyucha · Analytical research for active market participants.</div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    const article = document.getElementById('articleContent');
+    const words = article.textContent.trim().split(/\s+/).length;
+    document.getElementById('readingTime').textContent = `${Math.max(1, Math.round(words / 220))} min read`;
+
+    const progressBar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = `${total > 0 ? (window.scrollY / total) * 100 : 0}%`;
+    });
+  </script>
+</body>
+</html>
