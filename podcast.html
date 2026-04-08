@@ -3,11 +3,31 @@ layout: default
 ---
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast | jespyucha</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast | jespyucha</title>
+  <meta name="description" content="Podcast episodes on macro-economics, risk frameworks, and active trading discipline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { base: '#F7F7F5', charcoal: '#0F172A', ink: '#1F2937', trustBlue: '#2563EB' },
+          fontFamily: { serif: ['Libre Baskerville', 'serif'], sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -18,13 +38,27 @@ layout: default
             <a href="/blog">Blog</a>
             <a href="/podcast" class="active">Podcast</a>
         </div>
+<body class="bg-base text-ink dark:bg-charcoal dark:text-gray-100 font-sans">
+  <header class="border-b border-gray-200/70 dark:border-gray-700 sticky top-0 z-40 bg-base/95 dark:bg-charcoal/95 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+      <a href="/" class="font-serif text-2xl">jespyucha</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/">Home</a>
+        <a href="/article">Article</a>
+        <a href="/podcast" class="text-trustBlue">Podcast</a>
+        <button id="themeToggle" class="px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600 text-xs" aria-label="Toggle dark mode">Dark</button>
+      </div>
     </nav>
+  </header>
 
     <section class="section">
         <div class="flex-container">
             <div class="flex-image">
                 <img src="/assets/img/blog-hero.jpg" alt="Podcast Illustration" style="width: 100%; border-radius: 4px;">
             </div>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <h1 class="font-serif text-4xl sm:text-5xl">Podcast Briefings</h1>
+    <p class="mt-4 max-w-3xl text-gray-700 dark:text-gray-300">Actionable conversations on macro regime shifts, trade structuring, and process discipline.</p>
 
             <div class="flex-text">
                 <h1 style="font-family: serif; font-size: 3rem; margin-bottom: 20px;">Midday Coffee Notes</h1>
@@ -32,6 +66,14 @@ layout: default
                     A casual space where I share tips, tricks, and public learning ideas from my journey in finance and trading. Grab a coffee and join the conversation.
                 </p>
             </div>
+    <section class="mt-10 space-y-4">
+      <article class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-6">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Episode 001</p>
+            <h2 class="font-serif text-2xl mt-1">Can We Truly Self-Learn in the Digital Era?</h2>
+          </div>
+          <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 rounded-md bg-trustBlue text-white text-sm font-semibold">Listen on Spotify</a>
         </div>
     </section>
 
@@ -49,6 +91,7 @@ layout: default
                     Listen on Spotify
                 </a>
             </div>
+      </article>
 
             <div class="list-item-container" style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; opacity: 0.5;">
                 <div>
@@ -58,7 +101,13 @@ layout: default
                 <span style="font-style: italic;">Coming Soon</span>
             </div>
         </div>
+      <article class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-6 opacity-80">
+        <p class="text-xs uppercase tracking-[0.2em] text-gray-500">Episode 002</p>
+        <h2 class="font-serif text-2xl mt-1">Trading Psychology Under Pressure</h2>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Coming soon.</p>
+      </article>
     </section>
+  </main>
 
     <footer style="border-top: 1px solid rgba(0,0,0,0.1); padding: 80px 10% 40px; margin-top: 100px; display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="footer-left">
@@ -74,6 +123,17 @@ layout: default
             <a href="https://www.tiktok.com/@jespyucha" target="_blank" style="display: block; text-decoration: none; color: #4a3728; font-weight: 500;">TikTok</a>
         </div>
     </footer>
+  <script>
+    const root = document.documentElement;
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
 
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
 </body>
 </html>
