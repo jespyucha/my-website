@@ -12,7 +12,7 @@ layout: default
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jespyucha | Macro-Economics x Active Trading</title>
-  <meta name="description" content="A high-trust platform for macro-economics, active trading case studies, and podcast intelligence." />
+  <meta name="description" content="Authoritative macro and trading intelligence for professionals: essays, execution logs, and podcast briefings." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
@@ -23,11 +23,11 @@ layout: default
       theme: {
         extend: {
           colors: {
-            base: '#F5F5F4',
-            slate: '#111827',
+            base: '#F7F7F5',
+            charcoal: '#0F172A',
             ink: '#1F2937',
-            trust: '#2563EB',
-            success: '#059669'
+            trustBlue: '#2563EB',
+            traderGreen: '#059669'
           },
           fontFamily: {
             serif: ['Libre Baskerville', 'serif'],
@@ -39,6 +39,8 @@ layout: default
   </script>
 </head>
 <body>
+<body class="bg-base text-ink dark:bg-charcoal dark:text-gray-100 font-sans">
+  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
 
     <nav>
         <a href="/" class="logo">jespyucha</a>
@@ -47,16 +49,14 @@ layout: default
             <a href="/blog">Blog</a>
             <a href="/podcast">Podcast</a>
         </div>
-<body class="bg-base text-ink dark:bg-slate dark:text-gray-100 font-sans">
-  <header class="sticky top-0 z-50 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-slate/95 backdrop-blur">
-    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-charcoal/95 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
       <a href="/" class="font-serif text-2xl tracking-tight">jespyucha</a>
-      <div class="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm font-medium">
-        <a href="/" class="text-trust">Home</a>
-        <a href="/blog">Journal</a>
-        <a href="/article">Essay</a>
+      <div class="flex items-center gap-3 sm:gap-5 text-xs sm:text-sm font-medium">
+        <a href="/" class="text-trustBlue">Home</a>
+        <a href="/article">Article</a>
         <a href="/podcast">Podcast</a>
-        <button id="themeToggle" class="px-3 py-1.5 border border-gray-300 dark:border-gray-600 rounded-full text-xs">Dark</button>
+        <button id="themeToggle" class="px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600" aria-label="Toggle dark mode">Dark</button>
       </div>
     </nav>
   </header>
@@ -79,14 +79,14 @@ layout: default
                 <img src="/assets/img/portrait.jpeg" alt="Jespyucha Portrait">
             </div>
         </div>
-  <main>
+  <main id="content">
     <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-      <p class="uppercase tracking-[0.22em] text-xs text-gray-500 dark:text-gray-400">For traders, allocators, and economics enthusiasts</p>
-      <h1 class="font-serif mt-4 text-4xl sm:text-6xl leading-tight max-w-4xl">Analyzing the intersection of <span class="text-success">Macro-Economics</span> and Active Trading.</h1>
-      <p class="mt-6 text-base sm:text-lg max-w-3xl text-gray-700 dark:text-gray-300">A modern research hub built for professionals who value process, evidence, and repeatable decision frameworks over market noise.</p>
+      <p class="uppercase tracking-[0.22em] text-xs text-gray-500 dark:text-gray-400">Professional Macro Intelligence</p>
+      <h1 class="font-serif mt-4 text-4xl sm:text-6xl leading-tight max-w-4xl">Analyzing the intersection of <span class="text-traderGreen">Macro-Economics</span> and Active Trading.</h1>
+      <p class="mt-6 text-base sm:text-lg max-w-3xl text-gray-700 dark:text-gray-300">A high-trust platform for professional traders, institutional investors, and economics enthusiasts who prefer structured process over noise.</p>
       <div class="mt-10 flex flex-wrap gap-4">
-        <a href="/article" class="px-5 py-3 rounded-md bg-trust text-white text-sm font-semibold">Start with the flagship essay</a>
-        <a href="#newsletter" class="px-5 py-3 rounded-md border border-gray-300 dark:border-gray-600 text-sm font-semibold">Get weekly brief</a>
+        <a href="/article" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Read flagship essay</a>
+        <a href="#newsletter" class="px-5 py-3 rounded-md border border-gray-300 dark:border-gray-600 text-sm font-semibold">Join newsletter</a>
       </div>
     </section>
 
@@ -94,22 +94,22 @@ layout: default
       <article class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-7 sm:p-8">
         <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-3">Hub 01</p>
         <h2 class="font-serif text-3xl">Trading Journey</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">Live process logs, post-trade evaluations, and scenario planning centered on risk-adjusted repeatability.</p>
+        <p class="mt-4 text-gray-700 dark:text-gray-300">Transparent execution logs, post-trade audits, and risk playbooks with an accountability-first lens.</p>
         <ul class="mt-6 space-y-3 text-sm">
-          <li class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Execution Log: CPI Week</span><span class="text-gray-500">Case Study</span></li>
-          <li class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Regime-Based Position Sizing</span><span class="text-gray-500">Framework</span></li>
-          <li class="flex items-center justify-between"><span>Mistake Review Ledger</span><span class="text-gray-500">Journal</span></li>
+          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Execution Log: CPI Week</span><span class="text-gray-500">Case Study</span></li>
+          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Position Sizing by Vol Regime</span><span class="text-gray-500">Framework</span></li>
+          <li class="flex justify-between"><span>Mistake Review Ledger</span><span class="text-gray-500">Journal</span></li>
         </ul>
       </article>
 
       <article class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-7 sm:p-8">
         <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-3">Hub 02</p>
         <h2 class="font-serif text-3xl">Economic Theory</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">Long-form essays linking monetary policy, growth regimes, and liquidity transmission to practical trading implications.</p>
+        <p class="mt-4 text-gray-700 dark:text-gray-300">Deep-dive essays mapping policy, liquidity, and growth dynamics to tactical market positioning.</p>
         <ul class="mt-6 space-y-3 text-sm">
-          <li class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Liquidity Impulse Tracker</span><span class="text-gray-500">Research</span></li>
-          <li class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Rates Volatility and Carry</span><span class="text-gray-500">Essay</span></li>
-          <li class="flex items-center justify-between"><span>Term Premium Shifts</span><span class="text-gray-500">Deep Dive</span></li>
+          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Global Liquidity Impulse Map</span><span class="text-gray-500">Research</span></li>
+          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Rates Volatility & Carry</span><span class="text-gray-500">Essay</span></li>
+          <li class="flex justify-between"><span>Term Premium Rotation</span><span class="text-gray-500">Deep Dive</span></li>
         </ul>
       </article>
     </section>
@@ -120,14 +120,14 @@ layout: default
             <img src="assets/img/journey-image.jpg" alt="My Journey" style="width: 100%; height: auto; border-radius: 2px;">
             <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 10px;">Exploring the markets, 2026</p>
     <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
-      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 sm:p-8 bg-white dark:bg-gray-900/40">
-        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5">
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/40 p-6 sm:p-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
           <div>
-            <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Podcast</p>
+            <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Podcast Series</p>
             <h2 class="font-serif text-3xl">Macro & Market Structure</h2>
-            <p class="mt-3 text-gray-700 dark:text-gray-300">A sleek listening experience while browsing essays and logs.</p>
+            <p class="mt-3 text-gray-700 dark:text-gray-300">Listen while browsing. Fast briefings on regime shifts, positioning, and risk context.</p>
           </div>
-          <a href="/podcast" class="text-trust text-sm font-semibold">Browse all episodes →</a>
+          <a href="/podcast" class="text-trustBlue text-sm font-semibold">See all episodes →</a>
         </div>
 
         <div class="flex-text" style="font-size: 1.1rem; line-height: 1.8;">
@@ -146,18 +146,15 @@ layout: default
                 actionable insights, helping you navigate your own financial education.
             </p>
         <div class="mt-6 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5">
-          <div class="flex items-center justify-between gap-3 mb-3">
+          <div class="flex items-center justify-between mb-3">
             <p class="font-medium">Episode 014 — Neutral Rate Repricing</p>
             <span class="text-xs text-gray-500">21:34</span>
           </div>
-          <audio id="podcastAudio" class="hidden">
+          <audio controls class="w-full" aria-label="Podcast player">
             <source src="" type="audio/mpeg" />
+            Audio source unavailable. Add episode file URL to enable playback.
           </audio>
-          <div class="flex flex-col sm:flex-row sm:items-center gap-3">
-            <button id="playBtn" class="px-4 py-2 rounded-md bg-slate text-white dark:bg-white dark:text-slate text-sm font-semibold">Play</button>
-            <input id="seekBar" type="range" min="0" max="100" value="0" class="w-full accent-trust" />
-            <span id="timeLabel" class="text-xs text-gray-500 min-w-[72px] text-right">00:00</span>
-          </div>
+          <p class="mt-2 text-xs text-gray-500">Tip: set the `source src` to your hosted podcast MP3 to activate playback.</p>
         </div>
     </div>
 </section>
@@ -178,12 +175,12 @@ layout: default
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14 grid lg:grid-cols-2 gap-8 items-center">
       <div>
         <h3 class="font-serif text-3xl">Weekly Macro Trading Brief</h3>
-        <p class="mt-3 text-gray-700 dark:text-gray-300">A concise memo with regime context, risk framing, and one actionable chart.</p>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">One tactical framework, one chart, one risk reminder — delivered weekly.</p>
       </div>
-      <form class="flex flex-col sm:flex-row gap-3">
+      <form class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
         <label for="email" class="sr-only">Email</label>
-        <input id="email" type="email" placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
-        <button type="submit" class="px-5 py-3 rounded-md bg-trust text-white text-sm font-semibold">Subscribe</button>
+        <input id="email" name="email" type="email" required placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
+        <button type="submit" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Subscribe</button>
       </form>
     </div>
   </footer>
@@ -195,49 +192,14 @@ layout: default
 </footer>
   <script>
     const root = document.documentElement;
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') root.classList.add('dark');
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
 
     document.getElementById('themeToggle').addEventListener('click', () => {
       root.classList.toggle('dark');
       localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
-    });
-
-    const audio = document.getElementById('podcastAudio');
-    const playBtn = document.getElementById('playBtn');
-    const seekBar = document.getElementById('seekBar');
-    const timeLabel = document.getElementById('timeLabel');
-
-    const formatTime = (seconds) => {
-      if (!Number.isFinite(seconds)) return '00:00';
-      const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
-      const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
-      return `${mins}:${secs}`;
-    };
-
-    playBtn.addEventListener('click', () => {
-      if (!audio.src) {
-        playBtn.textContent = 'No audio';
-        return;
-      }
-      if (audio.paused) {
-        audio.play();
-        playBtn.textContent = 'Pause';
-      } else {
-        audio.pause();
-        playBtn.textContent = 'Play';
-      }
-    });
-
-    audio.addEventListener('timeupdate', () => {
-      if (audio.duration) {
-        seekBar.value = (audio.currentTime / audio.duration) * 100;
-      }
-      timeLabel.textContent = formatTime(audio.currentTime);
-    });
-
-    seekBar.addEventListener('input', () => {
-      if (audio.duration) audio.currentTime = (seekBar.value / 100) * audio.duration;
     });
   </script>
 </body>
