@@ -2,83 +2,117 @@
 layout: default
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <title>Jespyucha | Official Website</title>
-    <meta name="description" content="Official website of Jespyucha. Documenting a self-taught journey through financial markets, trading psychology, and personal discipline.">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquidity Cycles and Tactical Positioning | jespyucha</title>
+  <meta name="description" content="Deep-dive essay on liquidity cycles, policy impulse, and tactical risk positioning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { base: '#F5F5F4', slate: '#111827', ink: '#1F2937', trust: '#2563EB', success: '#059669' },
+          fontFamily: { serif: ['Libre Baskerville', 'serif'], sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body class="bg-base text-ink dark:bg-slate dark:text-gray-100 font-sans">
+  <div id="progressBar" class="fixed top-0 left-0 h-1 bg-success z-50" style="width:0%"></div>
 
-    <nav>
-        <a href="/" class="logo">jespyucha</a>
-        <div class="nav-links">
-            <a href="/" class="active">About Me</a>
-            <a href="/blog">Blog</a>
-            <a href="/podcast">Podcast</a>
-        </div>
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-slate/95 backdrop-blur">
+    <nav class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-serif text-2xl">jespyucha</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/">Home</a>
+        <a href="/blog">Journal</a>
+        <button id="themeToggle" class="px-3 py-1.5 border border-gray-300 dark:border-gray-600 rounded-full text-xs">Dark</button>
+      </div>
     </nav>
+  </header>
 
-    <section class="section">
-        <div class="flex-container">
-            <div class="flex-text">
-    <h1 style="font-size: 2.5rem; margin-bottom: 0;">Hello there, I'm Jespyucha.</h1>
-    
-    <h2 style="margin-top: 10px; font-weight: normal; font-size: 1.5rem;">Uncovering my self-learning journey.</h2>
-    
-    <div class="underline"></div>
-    
-    <p style="margin-top: 30px; font-size: 1.1rem; opacity: 0.8;">
-        I am a self-taught enthusiast dedicated to mastering the complexities of finance and the art of trading. 
-        This space is where I document my process, my wins, and the lessons learned along the way.
-    </p>
-</div>
-            <div class="flex-image">
-                <img src="/assets/img/portrait.jpeg" alt="Jespyucha Portrait">
-            </div>
-        </div>
-    </section>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <p class="uppercase tracking-[0.2em] text-xs text-gray-500">Economic Theory • April 2026</p>
+    <h1 class="font-serif text-4xl sm:text-5xl leading-tight mt-4">Liquidity Cycles and Tactical Positioning in a Post-ZIRP World</h1>
+    <p class="mt-5 text-gray-700 dark:text-gray-300">A process-first framework for institutional-grade macro decision making.</p>
 
-    <section class="section">
-    <div class="flex-container" style="align-items: flex-start;">
-        <div class="flex-image">
-            <img src="assets/img/journey-image.jpg" alt="My Journey" style="width: 100%; height: auto; border-radius: 2px;">
-            <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 10px;">Exploring the markets, 2026</p>
-        </div>
-
-        <div class="flex-text" style="font-size: 1.1rem; line-height: 1.8;">
-            <h2 style="font-family: serif; font-size: 2.2rem; margin-top: 0;">My Journey</h2>
-            <p>
-                It all started with a simple question: <em>How do the markets actually work?</em> Like many, I was 
-                initially overwhelmed by the jargon of the financial world. Instead of turning 
-                away, I decided to dive deep into the psychology and discipline required to trade effectively.
-            </p>
-            <p>
-                In 2026, I committed to a path of radical transparency. I realized that 
-                true mastery comes from acquiring the indispensable skill of critical thinking within the markets.
-            </p>
-            <p>
-                Today, my mission is to share this roadmap with you. I distil complex trading practices into 
-                actionable insights, helping you navigate your own financial education.
-            </p>
-        </div>
-    </div>
-</section>
-
-  <footer style="border-top: 1px solid rgba(0,0,0,0.1); padding: 80px 10% 40px; margin-top: 100px; display: flex; justify-content: space-between; align-items: flex-start;">
-    
-    <div class="footer-left">
-        <details>
-            <summary style="cursor: pointer; font-weight: bold; list-style: none; text-decoration: underline; color: #4a3728;">Inquiries</summary>
-            <p style="margin-top: 10px; font-family: -apple-system, sans-serif;">
-                <a href="mailto:jespyucha@icloud.com" style="color: #4a3728; text-decoration: none;">jespyucha@icloud.com</a>
-            </p>
-        </details>
+    <div class="mt-8 py-3 border-y border-gray-200 dark:border-gray-700 flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-300">
+      <span>By Jespyucha</span>
+      <span>•</span>
+      <span id="readingTime">8 min read</span>
+      <span>•</span>
+      <span>Macro / Risk / Execution</span>
     </div>
 
-    <div class="social-links" style="text-align: right;">
-        <a href="https://www.linkedin.com/in/ashok-sunuwar-522997273/" target="_blank" style="display: block; margin-bottom: 10px; text-decoration: none; color: #4a3728; font-weight: 500;">LinkedIn</a>
-        <a href="https://www.tiktok.com/@jespyucha" target="_blank" style="display: block; text-decoration: none; color: #4a3728; font-weight: 500;">TikTok</a>
-    </div>
-</footer>
+    <article id="articleContent" class="mt-10 space-y-8 leading-8 text-[1.06rem]">
+      <section>
+        <p>Macro signals matter only when converted into executable risk. The objective is not narrative elegance; the objective is to map liquidity state, quantify uncertainty, and deploy risk where asymmetry is favorable.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">1. Policy impulse is your first filter</h2>
+        <p>Begin with marginal change in policy stance and system liquidity. Markets often react to second derivatives, not levels. Repricing events tend to accelerate where consensus is anchored to stale macro assumptions.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">2. Seek cross-asset confirmation</h2>
+        <p>Validate your macro view through rates volatility, credit spreads, commodity breadth, and equity factor behavior. Durable regime shifts usually present coherence across multiple instruments before they appear in headlines.</p>
+      </section>
+
+      <section class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/40 p-6">
+        <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Mid-Article Newsletter</p>
+        <h3 class="font-serif text-2xl">Get the Weekly Macro Setup</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">One chart, one framework, one risk adjustment.</p>
+        <form class="mt-4 flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
+          <button type="submit" class="px-5 py-3 rounded-md bg-trust text-white text-sm font-semibold">Subscribe</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">3. Convert thesis into position architecture</h2>
+        <p>Define invalidation, holding horizon, scenario weights, and drawdown tolerance before entry. A valid macro thesis can still fail through poor implementation discipline.</p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl mb-3">Closing</h2>
+        <p>Precision in process will outperform intensity in conviction over long sample sizes. Track your framework, not just your P&amp;L.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-sm text-gray-600 dark:text-gray-300">© 2026 Jespyucha · Analytical research for active market participants.</div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') root.classList.add('dark');
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    const article = document.getElementById('articleContent');
+    const words = article.textContent.trim().split(/\s+/).length;
+    const mins = Math.max(1, Math.round(words / 220));
+    document.getElementById('readingTime').textContent = `${mins} min read`;
+
+    const progressBar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
+      progressBar.style.width = `${pct}%`;
+    });
+  </script>
+</body>
+</html>
