@@ -1,21 +1,25 @@
----
-layout: default
----
 <!DOCTYPE html>
-<html lang="en">
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <title>Jespyucha | Official Website</title>
-    <meta name="description" content="Official website of Jespyucha. Documenting a self-taught journey through financial markets, trading psychology, and personal discipline.">
-    <link rel="stylesheet" href="/assets/css/style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>jespyucha | Macro-Economics x Active Trading</title>
-  <meta name="description" content="Authoritative macro and trading intelligence for professionals: essays, execution logs, and podcast briefings." />
+  <title>Jespyucha | Portfolio · Macro Research · Academic Work</title>
+  <meta name="description" content="Portfolio of Jespyucha — writing on macro-economics and active trading, selected projects, and university essays & reports." />
+  <link rel="canonical" href="https://jespyucha.com/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jespyucha" />
+  <meta property="og:title" content="Jespyucha | Portfolio · Macro Research · Academic Work" />
+  <meta property="og:description" content="Writing on macro-economics and active trading, selected projects, and university essays & reports." />
+  <meta property="og:url" content="https://jespyucha.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0F17'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='64' fill='%23F5F4F1' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -23,180 +27,278 @@ layout: default
       theme: {
         extend: {
           colors: {
-            base: '#F7F7F5',
-            charcoal: '#0F172A',
-            ink: '#1F2937',
-            trustBlue: '#2563EB',
-            traderGreen: '#059669'
+            paper: '#FAFAF9',
+            charcoal: '#0B0F17',
+            ink: '#151A22',
+            trustBlue: '#1D4ED8',
+            traderGreen: '#047857'
           },
           fontFamily: {
-            serif: ['Libre Baskerville', 'serif'],
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+            serif: ['Libre Baskerville', 'Georgia', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
           }
         }
       }
     }
   </script>
+  <style>
+    /* Subtle blueprint grid backdrop — no images */
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(21,26,34,0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(21,26,34,0.045) 1px, transparent 1px);
+      background-size: 44px 44px;
+    }
+    .dark .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    }
+    .eyebrow { letter-spacing: 0.22em; }
+  </style>
 </head>
-<body>
-<body class="bg-base text-ink dark:bg-charcoal dark:text-gray-100 font-sans">
-  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
+<body class="bg-paper text-ink dark:bg-charcoal dark:text-gray-100 font-sans antialiased">
+  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-ink focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
 
-    <nav>
-        <a href="/" class="logo">jespyucha</a>
-        <div class="nav-links">
-            <a href="/" class="active">About Me</a>
-            <a href="/blog">Blog</a>
-            <a href="/podcast">Podcast</a>
-        </div>
-  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-charcoal/95 backdrop-blur">
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-800 bg-paper/90 dark:bg-charcoal/90 backdrop-blur">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
-      <a href="/" class="font-serif text-2xl tracking-tight">jespyucha</a>
-      <div class="flex items-center gap-3 sm:gap-5 text-xs sm:text-sm font-medium">
+      <a href="/" class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-8 h-8 rounded-md bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-lg">J</span>
+        <span class="font-serif text-xl tracking-tight">Jespyucha</span>
+      </a>
+      <div class="flex items-center gap-4 sm:gap-7 text-sm font-medium">
         <a href="/" class="text-trustBlue">Home</a>
-        <a href="/article">Article</a>
-        <a href="/podcast">Podcast</a>
-        <button id="themeToggle" class="px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600" aria-label="Toggle dark mode">Dark</button>
+        <a href="#work" class="hover:text-trustBlue transition-colors">Portfolio</a>
+        <a href="/article.html" class="hover:text-trustBlue transition-colors">Articles</a>
+        <a href="/academic.html" class="hover:text-trustBlue transition-colors">Academic</a>
+        <!-- HIDDEN FOR NOW (kept, not deleted): Podcast + Newsletter
+        <a href="/podcast.html" class="hover:text-trustBlue transition-colors">Podcast</a>
+        <a href="#newsletter" class="hidden sm:inline hover:text-trustBlue transition-colors">Newsletter</a>
+        -->
+        <button id="themeToggle" class="grid place-items-center w-9 h-9 rounded-full border border-gray-300 dark:border-gray-700 hover:border-trustBlue transition-colors" aria-label="Toggle dark mode">
+          <span aria-hidden="true">☾</span>
+        </button>
       </div>
     </nav>
   </header>
 
-    <section class="section">
-        <div class="flex-container">
-            <div class="flex-text">
-    <h1 style="font-size: 2.5rem; margin-bottom: 0;">Hello there, I'm Jespyucha.</h1>
-    
-    <h2 style="margin-top: 10px; font-weight: normal; font-size: 1.5rem;">Uncovering my self-learning journey.</h2>
-    
-    <div class="underline"></div>
-    
-    <p style="margin-top: 30px; font-size: 1.1rem; opacity: 0.8;">
-        I am a self-taught enthusiast dedicated to mastering the complexities of finance and the art of trading. 
-        This space is where I document my process, my wins, and the lessons learned along the way.
-    </p>
-</div>
-            <div class="flex-image">
-                <img src="/assets/img/portrait.jpeg" alt="Jespyucha Portrait">
-            </div>
-        </div>
   <main id="content">
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-      <p class="uppercase tracking-[0.22em] text-xs text-gray-500 dark:text-gray-400">Professional Macro Intelligence</p>
-      <h1 class="font-serif mt-4 text-4xl sm:text-6xl leading-tight max-w-4xl">Analyzing the intersection of <span class="text-traderGreen">Macro-Economics</span> and Active Trading.</h1>
-      <p class="mt-6 text-base sm:text-lg max-w-3xl text-gray-700 dark:text-gray-300">A high-trust platform for professional traders, institutional investors, and economics enthusiasts who prefer structured process over noise.</p>
-      <div class="mt-10 flex flex-wrap gap-4">
-        <a href="/article" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Read flagship essay</a>
-        <a href="#newsletter" class="px-5 py-3 rounded-md border border-gray-300 dark:border-gray-600 text-sm font-semibold">Join newsletter</a>
+    <!-- ============ HERO ============ -->
+    <section class="grid-bg border-b border-gray-200/70 dark:border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+        <p class="eyebrow uppercase text-xs text-gray-500 dark:text-gray-400 flex items-center gap-3">
+          <span class="inline-block w-8 h-px bg-traderGreen"></span> Portfolio · Macro Research · Academic Work
+        </p>
+        <h1 class="font-serif mt-6 text-4xl sm:text-6xl leading-[1.1] max-w-4xl">
+          Analyzing the intersection of <span class="text-traderGreen">macro-economics</span> and active trading.
+        </h1>
+        <p class="mt-7 text-base sm:text-lg max-w-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          A portfolio and writing platform documenting my work in markets and economics — structured
+          essays, selected projects, and university research, all in one place.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="/article.html" class="px-6 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold hover:bg-blue-700 transition-colors">Read my writing</a>
+          <a href="/academic.html" class="px-6 py-3 rounded-md border border-gray-300 dark:border-gray-600 text-sm font-semibold hover:border-trustBlue transition-colors">View academic work</a>
+        </div>
+
+        <!-- Signal strip -->
+        <dl class="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-8 max-w-3xl border-t border-gray-200 dark:border-gray-800 pt-8">
+          <div>
+            <dt class="text-xs uppercase eyebrow text-gray-500">Focus</dt>
+            <dd class="mt-1 font-serif text-xl">Macro · Rates · Risk</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase eyebrow text-gray-500">Output</dt>
+            <dd class="mt-1 font-serif text-xl">Essays &amp; projects</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase eyebrow text-gray-500">Principle</dt>
+            <dd class="mt-1 font-serif text-xl">Radical transparency</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-8">
-      <article class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-7 sm:p-8">
-        <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-3">Hub 01</p>
-        <h2 class="font-serif text-3xl">Trading Journey</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">Transparent execution logs, post-trade audits, and risk playbooks with an accountability-first lens.</p>
-        <ul class="mt-6 space-y-3 text-sm">
-          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Execution Log: CPI Week</span><span class="text-gray-500">Case Study</span></li>
-          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Position Sizing by Vol Regime</span><span class="text-gray-500">Framework</span></li>
-          <li class="flex justify-between"><span>Mistake Review Ledger</span><span class="text-gray-500">Journal</span></li>
-        </ul>
-      </article>
+    <!-- ============ PORTFOLIO / SELECTED WORK ============ -->
+    <section id="work" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 scroll-mt-20">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow uppercase text-xs text-gray-500">Portfolio</p>
+          <h2 class="font-serif text-3xl sm:text-4xl mt-3">Selected Work</h2>
+        </div>
+      </div>
+      <p class="mt-4 max-w-2xl text-gray-700 dark:text-gray-300">A snapshot of projects, analyses, and case studies. <span class="text-gray-500">(Replace these with your real projects.)</span></p>
 
-      <article class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/30 p-7 sm:p-8">
-        <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-3">Hub 02</p>
-        <h2 class="font-serif text-3xl">Economic Theory</h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300">Deep-dive essays mapping policy, liquidity, and growth dynamics to tactical market positioning.</p>
-        <ul class="mt-6 space-y-3 text-sm">
-          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Global Liquidity Impulse Map</span><span class="text-gray-500">Research</span></li>
-          <li class="flex justify-between border-b border-gray-200 dark:border-gray-700 pb-2"><span>Rates Volatility & Carry</span><span class="text-gray-500">Essay</span></li>
-          <li class="flex justify-between"><span>Term Premium Rotation</span><span class="text-gray-500">Deep Dive</span></li>
-        </ul>
-      </article>
+      <!-- TODO: swap each card for a real project. Link can go to an article, a PDF, or an external URL. -->
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/article.html" class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-6 hover:border-trustBlue transition-colors">
+          <p class="font-mono text-xs text-gray-500">01 · Case Study</p>
+          <h3 class="font-serif text-2xl mt-2 group-hover:text-trustBlue transition-colors">Liquidity Cycles &amp; Tactical Positioning</h3>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">A framework translating macro conditions into executable risk decisions.</p>
+          <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-trustBlue">Open →</span>
+        </a>
+
+        <a href="/academic.html" class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-6 hover:border-trustBlue transition-colors">
+          <p class="font-mono text-xs text-gray-500">02 · Report</p>
+          <h3 class="font-serif text-2xl mt-2 group-hover:text-trustBlue transition-colors">University Research &amp; Reports</h3>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Academic essays and coursework — economics, finance, and analysis.</p>
+          <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-trustBlue">Open →</span>
+        </a>
+
+        <div class="rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 p-6 flex flex-col justify-center text-center">
+          <p class="font-mono text-xs text-gray-500">03</p>
+          <h3 class="font-serif text-2xl mt-2 text-gray-400">Your next project</h3>
+          <p class="mt-3 text-sm text-gray-500 leading-relaxed">Add a project here — a model, a write-up, a dashboard, or a link.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-    <div class="flex-container" style="align-items: flex-start;">
-        <div class="flex-image">
-            <img src="assets/img/journey-image.jpg" alt="My Journey" style="width: 100%; height: auto; border-radius: 2px;">
-            <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 10px;">Exploring the markets, 2026</p>
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
-      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/40 p-6 sm:p-8">
+    <!-- ============ WRITING / ARTICLE CATEGORIES ============ -->
+    <section class="border-y border-gray-200/70 dark:border-gray-800 bg-white/60 dark:bg-gray-900/20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <p class="eyebrow uppercase text-xs text-gray-500">Writing</p>
+            <h2 class="font-serif text-3xl sm:text-4xl mt-3">Articles &amp; Research</h2>
+          </div>
+          <a href="/article.html" class="text-trustBlue text-sm font-semibold whitespace-nowrap">All articles →</a>
+        </div>
+
+        <div class="mt-10 grid lg:grid-cols-2 gap-8">
+          <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-paper dark:bg-charcoal p-7 sm:p-9">
+            <p class="eyebrow uppercase text-xs text-gray-500 mb-3">Hub 01</p>
+            <h3 class="font-serif text-3xl">Trading Journey</h3>
+            <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">Transparent execution logs, post-trade audits, and risk playbooks with an accountability-first lens.</p>
+            <ul class="mt-7 space-y-3 text-sm">
+              <!-- TODO: link each item to a real post -->
+              <li class="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5"><span>Execution Log: CPI Week</span><span class="font-mono text-xs text-gray-500">Case Study</span></li>
+              <li class="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5"><span>Position Sizing by Vol Regime</span><span class="font-mono text-xs text-gray-500">Framework</span></li>
+              <li class="flex justify-between"><span>Mistake Review Ledger</span><span class="font-mono text-xs text-gray-500">Journal</span></li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-paper dark:bg-charcoal p-7 sm:p-9">
+            <p class="eyebrow uppercase text-xs text-gray-500 mb-3">Hub 02</p>
+            <h3 class="font-serif text-3xl">Economic Theory</h3>
+            <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">Deep-dive essays mapping policy, liquidity, and growth dynamics to tactical market positioning.</p>
+            <ul class="mt-7 space-y-3 text-sm">
+              <!-- TODO: link each item to a real post -->
+              <li class="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5"><span>Global Liquidity Impulse Map</span><span class="font-mono text-xs text-gray-500">Research</span></li>
+              <li class="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-2.5"><span>Rates Volatility &amp; Carry</span><span class="font-mono text-xs text-gray-500">Essay</span></li>
+              <li class="flex justify-between"><span>Term Premium Rotation</span><span class="font-mono text-xs text-gray-500">Deep Dive</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACADEMIC WORK ============ -->
+    <section id="academic" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 scroll-mt-20">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow uppercase text-xs text-gray-500">Academic</p>
+          <h2 class="font-serif text-3xl sm:text-4xl mt-3">University Essays &amp; Reports</h2>
+        </div>
+        <a href="/academic.html" class="text-trustBlue text-sm font-semibold whitespace-nowrap">View all →</a>
+      </div>
+      <p class="mt-4 max-w-2xl text-gray-700 dark:text-gray-300">A dedicated archive of my university coursework — essays, research reports, and analyses, available to read or download as proof of work.</p>
+
+      <!-- TODO: replace with real reports. Each links to academic.html or a PDF in /assets/docs/ -->
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/academic.html" class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-6 hover:border-trustBlue transition-colors">
+          <p class="font-mono text-xs text-gray-500">Module · Year</p>
+          <h3 class="font-serif text-xl mt-2 group-hover:text-trustBlue transition-colors">Essay Title Placeholder</h3>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">One-line summary of the essay or report topic.</p>
+          <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-trustBlue">Read →</span>
+        </a>
+        <a href="/academic.html" class="group rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-6 hover:border-trustBlue transition-colors">
+          <p class="font-mono text-xs text-gray-500">Module · Year</p>
+          <h3 class="font-serif text-xl mt-2 group-hover:text-trustBlue transition-colors">Report Title Placeholder</h3>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">One-line summary of the essay or report topic.</p>
+          <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-trustBlue">Read →</span>
+        </a>
+        <div class="rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 p-6 flex flex-col justify-center text-center">
+          <h3 class="font-serif text-xl text-gray-400">Add your reports</h3>
+          <p class="mt-2 text-sm text-gray-500 leading-relaxed">Drop essays &amp; PDFs into the Academic page.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / MISSION ============ -->
+    <section id="about" class="border-t border-gray-200/70 dark:border-gray-800">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <p class="eyebrow uppercase text-xs text-gray-500">About</p>
+        <h2 class="font-serif text-3xl sm:text-4xl mt-3">About me</h2>
+        <!-- TODO: replace with your real bio / background / what you study -->
+        <div class="mt-6 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+          <p>It started with a single question: <em>how do markets actually work?</em> The financial world is loud with jargon and prediction theater. This site is a deliberate move in the other direction — a place to document what I build, write, and study.</p>
+          <p>My commitment is radical transparency — documented process, honest reviews, and frameworks that survive uncertainty. Alongside my market writing, I publish my university essays and reports here as an open record of my work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         HIDDEN FOR NOW — kept, not deleted (Podcast teaser).
+         Re-enable by removing the surrounding comment markers.
+    ===================================================================
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-7 sm:p-10">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
           <div>
-            <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Podcast Series</p>
-            <h2 class="font-serif text-3xl">Macro & Market Structure</h2>
-            <p class="mt-3 text-gray-700 dark:text-gray-300">Listen while browsing. Fast briefings on regime shifts, positioning, and risk context.</p>
+            <p class="eyebrow uppercase text-xs text-gray-500 mb-2">Podcast Series</p>
+            <h2 class="font-serif text-3xl">Macro &amp; Market Structure</h2>
+            <p class="mt-3 max-w-xl text-gray-700 dark:text-gray-300 leading-relaxed">Fast briefings on regime shifts, positioning, and risk context.</p>
           </div>
-          <a href="/podcast" class="text-trustBlue text-sm font-semibold">See all episodes →</a>
+          <a href="/podcast.html" class="text-trustBlue text-sm font-semibold whitespace-nowrap">See all episodes →</a>
         </div>
-
-        <div class="flex-text" style="font-size: 1.1rem; line-height: 1.8;">
-            <h2 style="font-family: serif; font-size: 2.2rem; margin-top: 0;">My Journey</h2>
-            <p>
-                It all started with a simple question: <em>How do the markets actually work?</em> Like many, I was 
-                initially overwhelmed by the jargon of the financial world. Instead of turning 
-                away, I decided to dive deep into the psychology and discipline required to trade effectively.
-            </p>
-            <p>
-                In 2026, I committed to a path of radical transparency. I realized that 
-                true mastery comes from acquiring the indispensable skill of critical thinking within the markets.
-            </p>
-            <p>
-                Today, my mission is to share this roadmap with you. I distil complex trading practices into 
-                actionable insights, helping you navigate your own financial education.
-            </p>
-        <div class="mt-6 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5">
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-medium">Episode 014 — Neutral Rate Repricing</p>
-            <span class="text-xs text-gray-500">21:34</span>
-          </div>
-          <audio controls class="w-full" aria-label="Podcast player">
-            <source src="" type="audio/mpeg" />
-            Audio source unavailable. Add episode file URL to enable playback.
-          </audio>
-          <p class="mt-2 text-xs text-gray-500">Tip: set the `source src` to your hosted podcast MP3 to activate playback.</p>
-        </div>
-    </div>
-</section>
       </div>
     </section>
+    ================================================================== -->
   </main>
 
-  <footer style="border-top: 1px solid rgba(0,0,0,0.1); padding: 80px 10% 40px; margin-top: 100px; display: flex; justify-content: space-between; align-items: flex-start;">
-    
-    <div class="footer-left">
-        <details>
-            <summary style="cursor: pointer; font-weight: bold; list-style: none; text-decoration: underline; color: #4a3728;">Inquiries</summary>
-            <p style="margin-top: 10px; font-family: -apple-system, sans-serif;">
-                <a href="mailto:jespyucha@icloud.com" style="color: #4a3728; text-decoration: none;">jespyucha@icloud.com</a>
-            </p>
-        </details>
-  <footer id="newsletter" class="border-t border-gray-200 dark:border-gray-700">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14 grid lg:grid-cols-2 gap-8 items-center">
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-900/20">
+    <!-- ==================================================================
+         HIDDEN FOR NOW — kept, not deleted (Newsletter signup).
+         Re-enable by removing the surrounding comment markers, and point
+         the form at your provider (Substack / Beehiiv / Mailchimp).
+    ===================================================================
+    <div id="newsletter" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 grid lg:grid-cols-2 gap-10 items-center border-b border-gray-200 dark:border-gray-800">
       <div>
         <h3 class="font-serif text-3xl">Weekly Macro Trading Brief</h3>
         <p class="mt-3 text-gray-700 dark:text-gray-300">One tactical framework, one chart, one risk reminder — delivered weekly.</p>
       </div>
-      <form class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
-        <label for="email" class="sr-only">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
-        <button type="submit" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Subscribe</button>
+      <form id="newsletterForm" class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com"
+               class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-trustBlue" />
+        <button type="submit" class="px-6 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold hover:bg-blue-700 transition-colors">Subscribe</button>
       </form>
+    </div>
+    ================================================================== -->
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center sm:justify-between text-sm">
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-7 h-7 rounded bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-sm">J</span>
+        <span class="text-gray-600 dark:text-gray-400">© 2026 Jespyucha · Portfolio &amp; research.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="mailto:jespyucha@icloud.com" class="hover:text-trustBlue transition-colors">Email</a>
+        <a href="https://www.linkedin.com/in/ashok-sunuwar-522997273/" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">LinkedIn</a>
+        <a href="https://www.tiktok.com/@jespyucha" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">TikTok</a>
+      </div>
     </div>
   </footer>
 
-    <div class="social-links" style="text-align: right;">
-        <a href="https://www.linkedin.com/in/ashok-sunuwar-522997273/" target="_blank" style="display: block; margin-bottom: 10px; text-decoration: none; color: #4a3728; font-weight: 500;">LinkedIn</a>
-        <a href="https://www.tiktok.com/@jespyucha" target="_blank" style="display: block; text-decoration: none; color: #4a3728; font-weight: 500;">TikTok</a>
-    </div>
-</footer>
   <script>
+    // Dark mode
     const root = document.documentElement;
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       root.classList.add('dark');
     }
-
     document.getElementById('themeToggle').addEventListener('click', () => {
       root.classList.toggle('dark');
       localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');

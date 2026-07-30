@@ -3,47 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liquidity Cycles and Tactical Positioning | jespyucha</title>
-  <meta name="description" content="Institutional-style macro essay on liquidity cycles and tactical risk positioning." />
+  <title>Liquidity Cycles and Tactical Positioning | Jespyucha</title>
+  <meta name="description" content="Institutional-style macro essay on liquidity cycles and tactical risk positioning in a post-ZIRP world." />
+  <link rel="canonical" href="https://jespyucha.com/article.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Liquidity Cycles and Tactical Positioning in a Post-ZIRP World" />
+  <meta property="og:description" content="A framework-first guide to translating macro conditions into executable risk decisions." />
+  <meta property="og:url" content="https://jespyucha.com/article.html" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0F17'/%3E%3Ctext x='50' y='72' font-family='Georgia,serif' font-size='64' fill='%23F5F4F1' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
-          colors: { base: '#F7F7F5', charcoal: '#0F172A', ink: '#1F2937', trustBlue: '#2563EB', traderGreen: '#059669' },
-          fontFamily: { serif: ['Libre Baskerville', 'serif'], sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+          colors: { paper: '#FAFAF9', charcoal: '#0B0F17', ink: '#151A22', trustBlue: '#1D4ED8', traderGreen: '#047857' },
+          fontFamily: {
+            serif: ['Libre Baskerville', 'Georgia', 'serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+          }
         }
       }
     }
   </script>
 </head>
-<body class="bg-base text-ink dark:bg-charcoal dark:text-gray-100 font-sans">
+<body class="bg-paper text-ink dark:bg-charcoal dark:text-gray-100 font-sans antialiased">
   <div id="progressBar" class="fixed top-0 left-0 h-1 bg-traderGreen z-50" style="width:0%"></div>
 
-  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-700 bg-base/95 dark:bg-charcoal/95 backdrop-blur">
-    <nav class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
-      <a href="/" class="font-serif text-2xl">jespyucha</a>
-      <div class="flex items-center gap-4 text-sm">
-        <a href="/">Home</a>
-        <a href="/article">Article</a>
-        <button id="themeToggle" class="px-3 py-1.5 rounded-full border border-gray-300 dark:border-gray-600 text-xs" aria-label="Toggle dark mode">Dark</button>
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-800 bg-paper/90 dark:bg-charcoal/90 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+      <a href="/" class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-8 h-8 rounded-md bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-lg">J</span>
+        <span class="font-serif text-xl tracking-tight">Jespyucha</span>
+      </a>
+      <div class="flex items-center gap-4 sm:gap-7 text-sm font-medium">
+        <a href="/" class="hover:text-trustBlue transition-colors">Home</a>
+        <a href="/#work" class="hover:text-trustBlue transition-colors">Portfolio</a>
+        <a href="/article.html" class="text-trustBlue">Articles</a>
+        <a href="/academic.html" class="hover:text-trustBlue transition-colors">Academic</a>
+        <button id="themeToggle" class="grid place-items-center w-9 h-9 rounded-full border border-gray-300 dark:border-gray-700 hover:border-trustBlue transition-colors" aria-label="Toggle dark mode">
+          <span aria-hidden="true">☾</span>
+        </button>
       </div>
     </nav>
   </header>
 
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
-    <p class="uppercase tracking-[0.2em] text-xs text-gray-500">Economic Theory • April 2026</p>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <p class="uppercase text-xs text-gray-500" style="letter-spacing:0.2em">Economic Theory • April 2026</p>
     <h1 class="font-serif text-4xl sm:text-5xl leading-tight mt-4">Liquidity Cycles and Tactical Positioning in a Post-ZIRP World</h1>
-    <p class="mt-5 text-gray-700 dark:text-gray-300">A framework-first guide to translating macro conditions into executable risk decisions.</p>
+    <p class="mt-5 text-lg text-gray-700 dark:text-gray-300">A framework-first guide to translating macro conditions into executable risk decisions.</p>
 
-    <div class="mt-8 py-3 border-y border-gray-200 dark:border-gray-700 flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-300">
+    <div class="mt-8 py-3 border-y border-gray-200 dark:border-gray-800 flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-400 font-mono">
       <span>By Jespyucha</span><span>•</span><span id="readingTime">8 min read</span><span>•</span><span>Macro / Risk / Execution</span>
     </div>
 
+    <!-- TODO: replace body copy with your finished essay -->
     <article id="articleContent" class="mt-10 space-y-8 leading-8 text-[1.06rem]">
       <section>
         <p>Liquidity drives opportunity sets. When policy stance and credit conditions shift at the margin, asset repricing can become nonlinear. The edge comes from framework discipline, not prediction theater.</p>
@@ -59,16 +79,22 @@
         <p>Use rates volatility, credit spreads, commodity persistence, and equity breadth as a confirmation set. Regime signals become robust when they cohere across multiple instruments.</p>
       </section>
 
-      <section class="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/40 p-6">
-        <p class="uppercase tracking-[0.2em] text-xs text-gray-500 mb-2">Mid-Article Newsletter</p>
+      <!-- ==================================================================
+           HIDDEN FOR NOW — kept, not deleted (Mid-article newsletter).
+           Re-enable by removing the surrounding comment markers, and point
+           the form at your provider (Substack / Beehiiv / Mailchimp).
+      ===================================================================
+      <section class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/40 p-6">
+        <p class="uppercase text-xs text-gray-500 mb-2" style="letter-spacing:0.2em">Mid-Article Newsletter</p>
         <h3 class="font-serif text-2xl">Get the Weekly Macro Setup</h3>
         <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">One framework. One chart. One risk adjustment.</p>
-        <form class="mt-4 flex flex-col sm:flex-row gap-3" aria-label="Mid-article newsletter signup">
+        <form id="articleForm" class="mt-4 flex flex-col sm:flex-row gap-3" aria-label="Mid-article newsletter signup">
           <label for="articleEmail" class="sr-only">Email</label>
-          <input id="articleEmail" name="articleEmail" type="email" required placeholder="you@fund.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800" />
-          <button type="submit" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold">Subscribe</button>
+          <input id="articleEmail" name="articleEmail" type="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-trustBlue" />
+          <button type="submit" class="px-5 py-3 rounded-md bg-trustBlue text-white text-sm font-semibold hover:bg-blue-700 transition-colors">Subscribe</button>
         </form>
       </section>
+      ================================================================== -->
 
       <section>
         <h2 class="font-serif text-2xl mb-3">3) Translate thesis into risk architecture</h2>
@@ -79,34 +105,59 @@
         <h2 class="font-serif text-2xl mb-3">Closing</h2>
         <p>Compounded performance follows process consistency. Build systems that survive uncertainty rather than narratives that assume certainty.</p>
       </section>
+
+      <p class="text-xs text-gray-500 border-t border-gray-200 dark:border-gray-800 pt-6">This material is for educational purposes only and is not financial advice. Markets involve risk; do your own research.</p>
     </article>
   </main>
 
-  <footer class="border-t border-gray-200 dark:border-gray-700 mt-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-sm text-gray-600 dark:text-gray-300">© 2026 Jespyucha · Analytical research for active market participants.</div>
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 mt-12 bg-white/60 dark:bg-gray-900/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center sm:justify-between text-sm">
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-7 h-7 rounded bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-sm">J</span>
+        <span class="text-gray-600 dark:text-gray-400">© 2026 Jespyucha · Analytical research for active market participants.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="mailto:jespyucha@icloud.com" class="hover:text-trustBlue transition-colors">Email</a>
+        <a href="https://www.linkedin.com/in/ashok-sunuwar-522997273/" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">LinkedIn</a>
+        <a href="https://www.tiktok.com/@jespyucha" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">TikTok</a>
+      </div>
+    </div>
   </footer>
 
   <script>
     const root = document.documentElement;
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       root.classList.add('dark');
     }
-
     document.getElementById('themeToggle').addEventListener('click', () => {
       root.classList.toggle('dark');
       localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
     });
 
+    // Reading time
     const article = document.getElementById('articleContent');
     const words = article.textContent.trim().split(/\s+/).length;
     document.getElementById('readingTime').textContent = `${Math.max(1, Math.round(words / 220))} min read`;
 
+    // Scroll progress
     const progressBar = document.getElementById('progressBar');
     window.addEventListener('scroll', () => {
       const total = document.documentElement.scrollHeight - window.innerHeight;
       progressBar.style.width = `${total > 0 ? (window.scrollY / total) * 100 : 0}%`;
     });
+
+    // Newsletter fallback (form is hidden for now; guarded so nothing errors)
+    const articleForm = document.getElementById('articleForm');
+    if (articleForm) {
+      articleForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('articleEmail').value.trim();
+        if (!email) return;
+        window.location.href = 'mailto:jespyucha@icloud.com?subject=Subscribe%20to%20Weekly%20Brief&body=Please%20add%20' + encodeURIComponent(email) + '%20to%20the%20weekly%20macro%20brief.';
+      });
+    }
   </script>
 </body>
 </html>
