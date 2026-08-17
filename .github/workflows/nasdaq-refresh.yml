@@ -1,0 +1,41 @@
+name: Refresh Nasdaq-100 markets data
+
+on:
+  schedule:
+    # 21:30 UTC on weekdays ≈ 4:30pm ET (after the US close). GitHub cron is UTC.
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:        # allows manual "Run workflow" from the Actions tab
+
+permissions:
+  contents: write           # lets the job commit the refreshed data back
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline (fetch -> analyze -> drivers)
+        run: |
+          python fetch.py
+          python analyze.py
+          python drivers.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "nasdaq-bot"
+          git config user.email "actions@github.com"
+          git add data/nasdaq.json
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore: refresh Nasdaq-100 data ($(date -u +%Y-%m-%d))"
+            git push
+          fi
