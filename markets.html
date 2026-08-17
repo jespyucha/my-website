@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasdaq-100 Movers | Ashok Sunuwar (Jespyucha)</title>
+  <meta name="description" content="Live Nasdaq-100 price-change analysis by Jespyucha — weekly, monthly, quarterly, YTD and yearly moves with the biggest drivers behind them, refreshed automatically after each close." />
+  <meta name="author" content="Ashok Sunuwar" />
+  <link rel="canonical" href="https://jespyucha.com/markets.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nasdaq-100 Movers | Jespyucha" />
+  <meta property="og:description" content="Live Nasdaq-100 price-change analysis — top movers across every timeframe with the drivers behind them." />
+  <meta property="og:url" content="https://jespyucha.com/markets.html" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0F17'/%3E%3Ctext x='50' y='72' font-family='Helvetica,Arial,sans-serif' font-size='64' fill='%23F5F4F1' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { paper: '#FAFAF9', charcoal: '#0B0F17', ink: '#151A22', trustBlue: '#1D4ED8', traderGreen: '#047857', traderRed: '#B91C1C' },
+          fontFamily: {
+            serif: ['-apple-system','BlinkMacSystemFont','SF Pro Display','Helvetica Neue','Arial','sans-serif'],
+            sans: ['-apple-system','BlinkMacSystemFont','SF Pro Text','Helvetica Neue','Arial','sans-serif'],
+            mono: ['SF Mono','ui-monospace','SFMono-Regular','Menlo','monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-paper text-ink dark:bg-charcoal dark:text-gray-100 font-sans antialiased">
+  <a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-ink focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-800 bg-paper/90 dark:bg-charcoal/90 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+      <a href="/" class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-8 h-8 rounded-md bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-lg">J</span>
+        <span class="font-serif text-xl tracking-tight">Jespyucha</span>
+      </a>
+      <div class="flex items-center gap-4 sm:gap-7 text-sm font-medium">
+        <a href="/" class="hover:text-trustBlue transition-colors">Home</a>
+        <a href="/#work" class="hover:text-trustBlue transition-colors">Portfolio</a>
+        <a href="/trading.html" class="hover:text-trustBlue transition-colors">Trading</a>
+        <a href="/markets.html" class="text-trustBlue">Markets</a>
+        <a href="/article.html" class="hover:text-trustBlue transition-colors">Articles</a>
+        <a href="/academic.html" class="hover:text-trustBlue transition-colors">Academic</a>
+        <button id="themeToggle" class="grid place-items-center w-9 h-9 rounded-full border border-gray-300 dark:border-gray-700 hover:border-trustBlue transition-colors" aria-label="Toggle dark mode">
+          <span aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+    <p class="uppercase text-xs text-gray-500" style="letter-spacing:0.22em">Markets</p>
+    <h1 class="font-serif text-4xl sm:text-5xl mt-3">Nasdaq-100 Movers</h1>
+    <p class="mt-4 max-w-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
+      A live read on the Nasdaq-100 — how every constituent has moved over the week, month,
+      quarter, year-to-date and year, ranked by the biggest gainers and losers, with the
+      headlines driving each move. Data refreshes automatically after each U.S. close.
+    </p>
+
+    <!-- status bar -->
+    <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-gray-500">
+      <span class="font-mono"><span id="liveDot" class="text-traderGreen">●</span> <span id="statusText">Loading…</span></span>
+      <span id="asOf" class="font-mono"></span>
+      <span id="constituents" class="font-mono"></span>
+    </div>
+
+    <!-- ============ KPI STRIP ============ -->
+    <section id="kpiStrip" class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3"></section>
+
+    <!-- ============ TIMEFRAME TABS ============ -->
+    <div class="mt-12 flex items-center justify-between flex-wrap gap-4">
+      <h2 class="font-serif text-2xl">Top movers</h2>
+      <div id="windowTabs" class="inline-flex flex-wrap gap-1 p-1 rounded-xl bg-gray-100 dark:bg-gray-900/50 text-sm"></div>
+    </div>
+
+    <!-- ============ LEADERBOARDS ============ -->
+    <section class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 overflow-hidden shadow-sm">
+        <div class="px-4 py-3 border-b border-gray-200 dark:border-gray-800 flex items-center gap-2">
+          <span class="text-traderGreen">▲</span><span class="font-semibold text-sm">Top gainers</span>
+        </div>
+        <div id="gainers" class="divide-y divide-gray-100 dark:divide-gray-800"></div>
+      </div>
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 overflow-hidden shadow-sm">
+        <div class="px-4 py-3 border-b border-gray-200 dark:border-gray-800 flex items-center gap-2">
+          <span class="text-traderRed">▼</span><span class="font-semibold text-sm">Top losers</span>
+        </div>
+        <div id="losers" class="divide-y divide-gray-100 dark:divide-gray-800"></div>
+      </div>
+    </section>
+
+    <!-- ============ DRIVERS ============ -->
+    <section class="mt-12">
+      <h2 class="font-serif text-2xl">Biggest drivers</h2>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Recent headlines behind the movers in the selected timeframe.</p>
+      <div id="drivers" class="mt-5 grid sm:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- ============ FULL TABLE ============ -->
+    <section class="mt-12">
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <h2 class="font-serif text-2xl">All constituents</h2>
+        <input id="search" type="search" placeholder="Filter ticker or name…"
+          class="text-sm px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900/40 focus:outline-none focus:border-trustBlue w-56" />
+      </div>
+      <div class="mt-5 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 overflow-x-auto shadow-sm">
+        <table class="w-full text-sm min-w-[720px]">
+          <thead id="tableHead" class="text-xs text-gray-500 border-b border-gray-200 dark:border-gray-800 select-none"></thead>
+          <tbody id="tableBody" class="font-mono"></tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-xs text-gray-500">Click a column header to sort. Green = up, red = down over that window.</p>
+    </section>
+
+    <p class="mt-12 text-xs text-gray-500 max-w-3xl leading-relaxed">
+      Prices are split/dividend-adjusted daily closes from public market data (end-of-day, delayed).
+      Figures are for transparency and educational purposes only and are <strong>not financial advice</strong>
+      or a recommendation to buy or sell any security.
+    </p>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-900/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center sm:justify-between text-sm">
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-7 h-7 rounded bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-sm">J</span>
+        <span class="text-gray-600 dark:text-gray-400">© 2026 Ashok Sunuwar (Jespyucha) · Portfolio &amp; research.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="mailto:a.sunuwar314@gmail.com" class="hover:text-trustBlue transition-colors">Email</a>
+        <a href="https://www.linkedin.com/in/ashok-sunuwar-522997273/" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">LinkedIn</a>
+        <a href="https://x.com/jespyucha" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- theme ----------
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) root.classList.add('dark');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // ---------- state ----------
+    const WINDOW_LABELS = { WTD:'Week-to-date', '1W':'1 Week', MTD:'Month-to-date', '1M':'1 Month', '1Q':'1 Quarter', YTD:'Year-to-date', '1Y':'1 Year' };
+    let DATA = null, activeWindow = 'YTD', sortKey = 'YTD', sortDir = -1;
+
+    const fmtPct = v => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(2) + '%';
+    const fmtPrice = v => v == null ? '—' : '$' + v.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    const colorFor = v => v == null ? 'text-gray-400' : v > 0 ? 'text-traderGreen' : v < 0 ? 'text-traderRed' : 'text-gray-500';
+    const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    async function load() {
+      try {
+        const res = await fetch('data/nasdaq.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        DATA = await res.json();
+        render();
+      } catch (e) {
+        document.getElementById('statusText').textContent = 'Could not load data (' + e.message + ')';
+        document.getElementById('liveDot').className = 'text-traderRed';
+      }
+    }
+
+    function render() {
+      document.getElementById('statusText').textContent = 'Live · auto-updating';
+      document.getElementById('asOf').textContent = 'As of ' + DATA.as_of;
+      document.getElementById('constituents').textContent = DATA.constituents + ' constituents';
+      renderKPIs(); renderTabs(); renderWindow(); renderTable(); wireSearch();
+    }
+
+    function avgChange(win) {
+      const vals = DATA.stocks.map(s => s.changes[win]).filter(v => v != null);
+      return vals.length ? vals.reduce((a,b)=>a+b,0)/vals.length : null;
+    }
+    function breadth(win) {
+      const vals = DATA.stocks.map(s => s.changes[win]).filter(v => v != null);
+      const up = vals.filter(v => v > 0).length;
+      return { up, total: vals.length };
+    }
+
+    function renderKPIs() {
+      const wins = ['1W','1M','YTD','1Y'];
+      document.getElementById('kpiStrip').innerHTML = wins.map(w => {
+        const a = avgChange(w), b = breadth(w);
+        return `<div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-4">
+          <div class="text-xs text-gray-500">${WINDOW_LABELS[w]} · avg</div>
+          <div class="mt-1 text-2xl font-serif ${colorFor(a)}">${fmtPct(a)}</div>
+          <div class="mt-1 text-xs text-gray-500">${b.up}/${b.total} advancing</div>
+        </div>`;
+      }).join('');
+    }
+
+    function renderTabs() {
+      document.getElementById('windowTabs').innerHTML = DATA.windows.map(w =>
+        `<button data-win="${w}" class="px-3 py-1.5 rounded-lg transition-colors ${w===activeWindow?'bg-white dark:bg-gray-800 shadow-sm font-semibold':'text-gray-500 hover:text-ink dark:hover:text-gray-200'}">${w}</button>`
+      ).join('');
+      document.querySelectorAll('#windowTabs button').forEach(b =>
+        b.onclick = () => { activeWindow = b.dataset.win; sortKey = activeWindow; sortDir = -1; renderTabs(); renderWindow(); renderTable(); });
+    }
+
+    function moverRow(s) {
+      return `<div class="flex items-center justify-between px-4 py-2.5">
+        <div class="min-w-0">
+          <span class="font-mono font-semibold">${s.ticker}</span>
+          <span class="text-gray-500 text-xs ml-2 truncate">${esc(s.name)}</span>
+        </div>
+        <div class="flex items-center gap-4 shrink-0">
+          ${s.vol_ratio && s.vol_ratio >= 1.5 ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300" title="Volume ${s.vol_ratio}× the 20-day average">${s.vol_ratio}× vol</span>` : ''}
+          <span class="font-mono text-gray-400 text-xs">${fmtPrice(s.last)}</span>
+          <span class="font-mono font-semibold ${colorFor(s.change)}">${fmtPct(s.change)}</span>
+        </div>
+      </div>`;
+    }
+
+    function renderWindow() {
+      const L = DATA.leaders[activeWindow];
+      document.getElementById('gainers').innerHTML = L.gainers.map(moverRow).join('');
+      document.getElementById('losers').innerHTML = L.losers.map(moverRow).join('');
+      renderDrivers(L);
+    }
+
+    function renderDrivers(L) {
+      const movers = [...L.gainers.slice(0,3), ...L.losers.slice(0,3)];
+      document.getElementById('drivers').innerHTML = movers.map(m => {
+        const notes = (DATA.movers_note && DATA.movers_note[m.ticker]) || [];
+        const items = notes.map(n => `<li class="text-xs leading-snug">
+            ${n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue">${esc(n.title)}</a>` : esc(n.title)}
+            ${n.publisher ? `<span class="text-gray-400"> — ${esc(n.publisher)}</span>` : ''}
+          </li>`).join('');
+        return `<div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/30 p-4">
+          <div class="flex items-center justify-between">
+            <span class="font-mono font-semibold">${m.ticker} <span class="text-gray-400 font-normal text-xs">${esc(m.name)}</span></span>
+            <span class="font-mono font-semibold ${colorFor(m.change)}">${fmtPct(m.change)}</span>
+          </div>
+          <ul class="mt-3 space-y-2 list-disc list-inside marker:text-gray-300">${items || '<li class="text-xs text-gray-400 list-none">No recent headlines.</li>'}</ul>
+        </div>`;
+      }).join('');
+    }
+
+    // ---------- full table ----------
+    function renderTableHead() {
+      const cols = [['ticker','Ticker'], ['last','Last'], ...DATA.windows.map(w => [w, w])];
+      document.getElementById('tableHead').innerHTML = '<tr>' + cols.map(([k,label]) => {
+        const arrow = sortKey === k ? (sortDir === -1 ? ' ▼' : ' ▲') : '';
+        const align = k === 'ticker' ? 'text-left' : 'text-right';
+        return `<th data-key="${k}" class="px-3 py-2.5 ${align} font-medium cursor-pointer hover:text-ink dark:hover:text-gray-200">${label}${arrow}</th>`;
+      }).join('') + '</tr>';
+      document.querySelectorAll('#tableHead th').forEach(th => th.onclick = () => {
+        const k = th.dataset.key;
+        if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = k === 'ticker' ? 1 : -1; }
+        renderTable();
+      });
+    }
+
+    function sortedStocks() {
+      const q = (document.getElementById('search').value || '').toLowerCase();
+      let rows = DATA.stocks.filter(s => !q || s.ticker.toLowerCase().includes(q) || s.name.toLowerCase().includes(q));
+      const val = s => sortKey === 'ticker' ? s.ticker : sortKey === 'last' ? s.last : s.changes[sortKey];
+      rows.sort((a,b) => {
+        const x = val(a), y = val(b);
+        if (x == null) return 1; if (y == null) return -1;
+        if (typeof x === 'string') return x.localeCompare(y) * sortDir;
+        return (x - y) * sortDir;
+      });
+      return rows;
+    }
+
+    function renderTable() {
+      renderTableHead();
+      const rows = sortedStocks();
+      document.getElementById('tableBody').innerHTML = rows.map(s => {
+        const cells = DATA.windows.map(w => `<td class="px-3 py-2 text-right ${colorFor(s.changes[w])}">${fmtPct(s.changes[w])}</td>`).join('');
+        return `<tr class="border-b border-gray-50 dark:border-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-800/30">
+          <td class="px-3 py-2 text-left"><span class="font-semibold">${s.ticker}</span> <span class="hidden sm:inline text-gray-400 font-sans text-xs">${esc(s.name)}</span></td>
+          <td class="px-3 py-2 text-right text-gray-500">${fmtPrice(s.last)}</td>
+          ${cells}
+        </tr>`;
+      }).join('');
+    }
+
+    function wireSearch() {
+      document.getElementById('search').addEventListener('input', renderTable);
+    }
+
+    load();
+  </script>
+</body>
+</html>
