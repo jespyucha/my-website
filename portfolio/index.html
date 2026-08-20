@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ashok Sunuwar (Jespyucha)</title>
+  <meta name="description" content="The professional portfolio and CV archive of Ashok Sunuwar (Jespyucha) — Global Business Management undergraduate focused on strategy, consulting and financial markets. Experience, projects, research, education and skills." />
+  <meta name="author" content="Ashok Sunuwar" />
+  <link rel="canonical" href="https://jespyucha.com/portfolio" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Portfolio | Ashok Sunuwar (Jespyucha)" />
+  <meta property="og:description" content="Structured professional archive — experience, projects, research, education and skills." />
+  <meta property="og:url" content="https://jespyucha.com/portfolio" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0F17'/%3E%3Ctext x='50' y='72' font-family='Helvetica,Arial,sans-serif' font-size='64' fill='%23F5F4F1' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { paper: '#FAFAF9', charcoal: '#0B0F17', ink: '#151A22', trustBlue: '#1D4ED8', traderGreen: '#047857' },
+          fontFamily: {
+            serif: ['-apple-system','BlinkMacSystemFont','SF Pro Display','Helvetica Neue','Arial','sans-serif'],
+            sans: ['-apple-system','BlinkMacSystemFont','SF Pro Text','Helvetica Neue','Arial','sans-serif'],
+            mono: ['SF Mono','ui-monospace','SFMono-Regular','Menlo','monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* ---- Portfolio-scoped styles only. All selectors are namespaced under .pf
+       so nothing here can affect the rest of jespyucha.com. ---- */
+    .pf .eyebrow { letter-spacing: 0.22em; }
+    /* Single-section mode is enabled only once JS runs; without JS every
+       section renders stacked (graceful degradation, still fully readable). */
+    .pf[data-js="on"] .pf-section:not(.is-active) { display: none; }
+    .pf-navlink[aria-current="true"] { color: #1D4ED8; font-weight: 600; }
+    .pf-navlink[aria-current="true"] .pf-navdash { width: 1.75rem; background: #047857; }
+    .pf-dialog[hidden] { display: none; }
+    @media (prefers-reduced-motion: reduce) { .pf * { transition: none !important; } }
+  </style>
+</head>
+<body class="bg-paper text-ink dark:bg-charcoal dark:text-gray-100 font-sans antialiased">
+  <a href="#pf-main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-ink focus:px-3 focus:py-2 focus:rounded-md">Skip to content</a>
+
+  <!-- ============ HEADER (shared site nav) ============ -->
+  <header class="sticky top-0 z-40 border-b border-gray-200/70 dark:border-gray-800 bg-paper/90 dark:bg-charcoal/90 backdrop-blur">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between" aria-label="Primary">
+      <a href="/" class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-8 h-8 rounded-md bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-lg">J</span>
+        <span class="font-serif text-xl tracking-tight">Jespyucha</span>
+      </a>
+      <div class="flex items-center gap-4 sm:gap-7 text-sm font-medium">
+        <a href="/" class="hover:text-trustBlue transition-colors">Home</a>
+        <a href="/portfolio" class="text-trustBlue">Portfolio</a>
+        <a href="/trading.html" class="hover:text-trustBlue transition-colors">Trading</a>
+        <a href="/markets.html" class="hover:text-trustBlue transition-colors">Markets</a>
+        <a href="/article.html" class="hover:text-trustBlue transition-colors">Articles</a>
+        <a href="/academic.html" class="hover:text-trustBlue transition-colors">Academic</a>
+        <button id="themeToggle" class="grid place-items-center w-9 h-9 rounded-full border border-gray-300 dark:border-gray-700 hover:border-trustBlue transition-colors" aria-label="Toggle dark mode">
+          <span aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="pf" data-js="off">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:grid lg:grid-cols-[280px_1fr] lg:gap-14">
+
+      <!-- ============ LEFT PANE: identity + navigation ============ -->
+      <aside class="lg:sticky lg:top-24 lg:self-start mb-12 lg:mb-0">
+        <p class="eyebrow uppercase text-xs text-gray-500">Portfolio</p>
+        <h1 class="font-serif text-3xl mt-2 leading-tight">Ashok Sunuwar</h1>
+        <p class="mt-1 text-gray-500 text-sm">Jespyucha</p>
+        <p class="mt-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+          Global Business Management undergraduate — strategy, consulting &amp; financial markets.
+        </p>
+        <p class="mt-2 text-sm text-gray-500">London, United Kingdom</p>
+
+        <div class="mt-5 flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
+          <a href="mailto:sunuwara2@coventry.ac.uk" class="text-trustBlue hover:underline">Email</a>
+          <a href="https://linkedin.com/in/ashoksunuwar" target="_blank" rel="noopener noreferrer" class="text-trustBlue hover:underline">LinkedIn</a>
+          <a href="https://x.com/jespyucha" target="_blank" rel="noopener noreferrer" class="text-trustBlue hover:underline">X</a>
+          <a href="https://jespyucha.com" class="text-trustBlue hover:underline">Website</a>
+        </div>
+
+        <nav class="mt-8 border-t border-gray-200 dark:border-gray-800 pt-6" aria-label="Portfolio sections">
+          <ul class="space-y-1 text-sm">
+            <!-- links populated with aria-current by JS; dash element gives the active accent -->
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#about"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>About</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#in-brief"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>In Brief</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#experience"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Experience</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#projects"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Projects</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#research"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Research &amp; Analysis</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#education"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Education</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#skills"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Skills</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#writing"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Writing</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#contact"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>Contact</a></li>
+            <li><a class="pf-navlink flex items-center gap-2 py-1 text-gray-600 dark:text-gray-400 hover:text-trustBlue transition-colors" href="#cv" data-cv="true"><span class="pf-navdash inline-block w-3 h-px bg-gray-300 dark:bg-gray-700 transition-all"></span>CV</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- ============ RIGHT PANE: sections ============ -->
+      <main id="pf-main" class="min-w-0">
+
+        <!-- ABOUT -->
+        <section id="about" class="pf-section is-active" tabindex="-1" aria-labelledby="about-h">
+          <h2 id="about-h" class="font-serif text-3xl sm:text-4xl">About</h2>
+          <div class="mt-6 space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>I'm Ashok Sunuwar — known online as <strong>Jespyucha</strong>. I'm an undergraduate reading <strong>BA (Hons) Global Business Management</strong> at Coventry University London (graduating 2027), focused on strategy, consulting and financial markets.</p>
+            <p>My work sits at the intersection of business strategy and markets — from strategy-consulting cases (a BCG job simulation and a self-built consumer-credit case on Currys plc) to self-directed markets analysis, including a Nasdaq-100 analytics dashboard I built by teaching myself Python.</p>
+            <p>Alongside coursework and undergraduate research in organisational behaviour and international business strategy, I keep an open, evidence-first record of what I build, write and study. This portfolio is the structured professional view of that work.</p>
+          </div>
+        </section>
+
+        <!-- IN BRIEF -->
+        <section id="in-brief" class="pf-section" tabindex="-1" aria-labelledby="brief-h" hidden>
+          <h2 id="brief-h" class="font-serif text-3xl sm:text-4xl">In Brief</h2>
+          <p class="mt-4 text-gray-600 dark:text-gray-400 text-sm">Recent activity, most recent first.</p>
+          <ul class="mt-8 space-y-5">
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2026</span><span class="text-gray-700 dark:text-gray-300">Incoming Marketing &amp; Business Development Intern, <strong>Prime Intelligence</strong> (Sep–Nov).</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2026</span><span class="text-gray-700 dark:text-gray-300">Undergraduate research — an Organisational Behaviour theoretical review and a Sweden→UAE market-entry study (May–Aug).</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2025–26</span><span class="text-gray-700 dark:text-gray-300">Built the <strong>Nasdaq-100 Market Analytics Dashboard</strong> (Dec 2025 – present).</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2025</span><span class="text-gray-700 dark:text-gray-300">Currys plc consumer-credit consulting case (Feb–Apr); BCG Strategy Consulting job simulation via Forage (Jan–Feb).</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2024</span><span class="text-gray-700 dark:text-gray-300">Elected Course/School Representative, Coventry University London Students' Union (Jun – present).</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2023–24</span><span class="text-gray-700 dark:text-gray-300">Data Annotator, Cloud Factory.</span></li>
+            <li class="grid grid-cols-[5rem_1fr] gap-4"><span class="font-mono text-xs text-gray-500 pt-0.5">2023</span><span class="text-gray-700 dark:text-gray-300">Diploma in Civil Engineering (First Division), Khwopa Polytechnic Institute.</span></li>
+          </ul>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="pf-section" tabindex="-1" aria-labelledby="exp-h" hidden>
+          <h2 id="exp-h" class="font-serif text-3xl sm:text-4xl">Experience</h2>
+          <div class="mt-8 space-y-10">
+
+            <article>
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Marketing &amp; Business Development Intern
+                  <span class="align-middle ml-2 text-[10px] uppercase tracking-wide font-sans px-1.5 py-0.5 rounded bg-traderGreen/10 text-traderGreen border border-traderGreen/30">Incoming</span>
+                </h3>
+                <span class="font-mono text-xs text-gray-500">September 2026 – November 2026</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Prime Intelligence</p>
+              <p class="mt-3 text-sm text-gray-500">Role scope (incoming):</p>
+              <ul class="mt-2 space-y-2 text-sm text-gray-700 dark:text-gray-300 list-disc list-inside marker:text-gray-300">
+                <li>Conduct market, competitor and customer research to identify growth opportunities and inform commercial strategy.</li>
+                <li>Identify and evaluate potential distributors, retailers and business partners to support market expansion and B2B growth.</li>
+                <li>Support B2B lead generation and outreach across email, telephone and LinkedIn, tracking leads and follow-ups.</li>
+              </ul>
+            </article>
+
+            <article>
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">BCG Strategy Consulting Job Simulation</h3>
+                <span class="font-mono text-xs text-gray-500">January 2025 – February 2025</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Virtual job simulation · Forage</p>
+              <ul class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300 list-disc list-inside marker:text-gray-300">
+                <li>Benchmarked three financing models against a telecom P&amp;L, isolating revenue uplift, working-capital costs and default risk to forecast impact.</li>
+                <li>Designed a 15-question consumer survey using trade-offs to identify high-propensity segments and quantify willingness to accept longer terms.</li>
+                <li>Synthesised market research, competitor financials and survey data into executive recommendations, stakeholder risk mitigations and a phased rollout timeline.</li>
+              </ul>
+            </article>
+
+            <article>
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Data Annotator</h3>
+                <span class="font-mono text-xs text-gray-500">May 2023 – April 2024</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Cloud Factory</p>
+              <ul class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300 list-disc list-inside marker:text-gray-300">
+                <li>Annotated and validated thousands of aerial property images to train AI models for real-estate asset evaluation.</li>
+                <li>Identified edge cases in structural data and escalated ambiguities to refine project taxonomy guidelines.</li>
+                <li>Collaborated with QA leads to implement real-time feedback loops and reduce annotation error rates.</li>
+              </ul>
+            </article>
+
+            <article class="border-t border-gray-200 dark:border-gray-800 pt-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Course / School Representative</h3>
+                <span class="font-mono text-xs text-gray-500">June 2024 – Present</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">School of Business &amp; Management · Coventry University London Students' Union</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">Elected representative for students in the School of Business &amp; Management — a leadership and student-voice role.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="pf-section" tabindex="-1" aria-labelledby="proj-h" hidden>
+          <h2 id="proj-h" class="font-serif text-3xl sm:text-4xl">Projects</h2>
+          <div class="mt-8 divide-y divide-gray-200 dark:divide-gray-800 border-t border-gray-200 dark:border-gray-800">
+
+            <article class="py-6">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Nasdaq-100 Market Analytics Dashboard</h3>
+                <span class="font-mono text-xs text-gray-500">December 2025 – Present</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 font-mono">Data · Markets · Self-initiated</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">A self-initiated live dashboard analysing all 95 Nasdaq-100 companies across seven time horizons, pairing each major move with the news driver behind it.</p>
+              <button type="button" class="pf-open mt-3 text-sm font-semibold text-trustBlue hover:underline" data-detail="detail-nasdaq">View project →</button>
+            </article>
+
+            <article class="py-6">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Consumer Credit Expansion Case — Currys plc</h3>
+                <span class="font-mono text-xs text-gray-500">February 2025 – April 2025</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 font-mono">Strategy · Consulting · Self-directed</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">A self-directed consulting case translating a BCG simulation into a repeatable Evidence-to-Decision methodology, applied to Currys' consumer-credit expansion.</p>
+              <button type="button" class="pf-open mt-3 text-sm font-semibold text-trustBlue hover:underline" data-detail="detail-currys">View project →</button>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- RESEARCH & ANALYSIS -->
+        <section id="research" class="pf-section" tabindex="-1" aria-labelledby="res-h" hidden>
+          <h2 id="res-h" class="font-serif text-3xl sm:text-4xl">Research &amp; Analysis</h2>
+          <p class="mt-4 text-gray-600 dark:text-gray-400 text-sm">Undergraduate research and academic strategy work.</p>
+          <div class="mt-6 divide-y divide-gray-200 dark:divide-gray-800 border-t border-gray-200 dark:border-gray-800">
+
+            <article class="py-6">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Informal Knowledge-Sharing in Remote Work</h3>
+                <span class="font-mono text-xs text-gray-500">May 2026 – August 2026</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 font-mono">Organisational Behaviour · Undergraduate research proposal</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">A theoretical-review proposal challenging distance-based explanations for declining informal knowledge-sharing, introducing the concept of "visibility-contingent reciprocity".</p>
+              <button type="button" class="pf-open mt-3 text-sm font-semibold text-trustBlue hover:underline" data-detail="detail-ob">View research →</button>
+            </article>
+
+            <article class="py-6">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">International Market Entry: Sweden → UAE</h3>
+                <span class="font-mono text-xs text-gray-500">May 2026 – August 2026</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 font-mono">International Business Strategy · Undergraduate research</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">A market-entry study assessing UAE healthcare opportunities for a Swedish firm, using PESTLE, Porter's Five Forces and the institution-based view.</p>
+              <button type="button" class="pf-open mt-3 text-sm font-semibold text-trustBlue hover:underline" data-detail="detail-neko">View research →</button>
+            </article>
+
+            <article class="py-6">
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Strategic HRM — Tata Group</h3>
+                <span class="font-mono text-xs text-gray-500">University coursework</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1 font-mono">Strategic Human Resource Management</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">A strategic HRM analysis of the Tata Group covering recruitment, training, reward, diversity &amp; inclusion, and the HR business-partner model.</p>
+              <button type="button" class="pf-open mt-3 text-sm font-semibold text-trustBlue hover:underline" data-detail="detail-tata">View research →</button>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="pf-section" tabindex="-1" aria-labelledby="edu-h" hidden>
+          <h2 id="edu-h" class="font-serif text-3xl sm:text-4xl">Education</h2>
+          <div class="mt-8 space-y-8">
+            <article>
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">BA (Hons) Global Business Management</h3>
+                <span class="font-mono text-xs text-gray-500">Expected graduation April 2027</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Coventry University London · London, UK</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">Predicted First-Class Honours (1:1). Undergraduate research in Organisational Behaviour and International Business Strategy.</p>
+            </article>
+            <article>
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h3 class="font-serif text-xl">Diploma in Civil Engineering</h3>
+                <span class="font-mono text-xs text-gray-500">2023</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Khwopa Polytechnic Institute · Nepal</p>
+              <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">First Division.</p>
+            </article>
+            <article class="border-t border-gray-200 dark:border-gray-800 pt-6">
+              <p class="eyebrow uppercase text-xs text-gray-500">Honours</p>
+              <p class="mt-2 text-sm text-gray-700 dark:text-gray-300"><strong>Classified Free Scholarship</strong> — 100% merit-based government scholarship for the TSLC (2016).</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="pf-section" tabindex="-1" aria-labelledby="skills-h" hidden>
+          <h2 id="skills-h" class="font-serif text-3xl sm:text-4xl">Skills</h2>
+          <p class="mt-4 text-gray-600 dark:text-gray-400 text-sm">Grouped from work evidenced across my experience, projects and research.</p>
+          <div class="mt-8 space-y-7">
+            <div>
+              <h3 class="eyebrow uppercase text-xs text-gray-500">Strategy &amp; Consulting</h3>
+              <p class="mt-2 text-gray-700 dark:text-gray-300">Market-entry strategy · PESTLE · Porter's Five Forces · Competitor analysis · Evidence-to-Decision frameworks · Executive synthesis</p>
+            </div>
+            <div>
+              <h3 class="eyebrow uppercase text-xs text-gray-500">Research &amp; Analysis</h3>
+              <p class="mt-2 text-gray-700 dark:text-gray-300">Theoretical review · Qualitative research · Quantitative analysis · Survey design · Market &amp; competitor research</p>
+            </div>
+            <div>
+              <h3 class="eyebrow uppercase text-xs text-gray-500">Data &amp; Technical</h3>
+              <p class="mt-2 text-gray-700 dark:text-gray-300">Python · Data pipelines &amp; automation · Financial modelling · Data annotation &amp; validation</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WRITING -->
+        <section id="writing" class="pf-section" tabindex="-1" aria-labelledby="writing-h" hidden>
+          <h2 id="writing-h" class="font-serif text-3xl sm:text-4xl">Writing</h2>
+          <div class="mt-6 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>I publish essays and notes on markets and economics — and keep a transparent trading journal — on the main Jespyucha site.</p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2">
+              <a href="/article.html" class="text-sm font-semibold text-trustBlue hover:underline">Open Articles →</a>
+              <a href="/trading.html" class="text-sm font-semibold text-trustBlue hover:underline">Trading journal →</a>
+              <a href="/markets.html" class="text-sm font-semibold text-trustBlue hover:underline">Markets dashboard →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="pf-section" tabindex="-1" aria-labelledby="contact-h" hidden>
+          <h2 id="contact-h" class="font-serif text-3xl sm:text-4xl">Contact</h2>
+          <dl class="mt-8 space-y-4 text-sm">
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">Name</dt><dd>Ashok Sunuwar (Jespyucha)</dd></div>
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">Location</dt><dd>London, United Kingdom</dd></div>
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">Email</dt><dd><a href="mailto:sunuwara2@coventry.ac.uk" class="text-trustBlue hover:underline">sunuwara2@coventry.ac.uk</a></dd></div>
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">LinkedIn</dt><dd><a href="https://linkedin.com/in/ashoksunuwar" target="_blank" rel="noopener noreferrer" class="text-trustBlue hover:underline">linkedin.com/in/ashoksunuwar</a></dd></div>
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">X</dt><dd><a href="https://x.com/jespyucha" target="_blank" rel="noopener noreferrer" class="text-trustBlue hover:underline">x.com/jespyucha</a></dd></div>
+            <div class="flex gap-4"><dt class="w-24 text-gray-500">Website</dt><dd><a href="https://jespyucha.com" class="text-trustBlue hover:underline">jespyucha.com</a></dd></div>
+          </dl>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ============ HIDDEN MODAL CONTENT (cloned into the dialog on open) ============ -->
+  <div hidden>
+    <div id="detail-nasdaq">
+      <p class="font-mono text-xs text-gray-500">Data · Markets · Self-initiated · December 2025 – Present</p>
+      <h3 class="font-serif text-2xl mt-1">Nasdaq-100 Market Analytics Dashboard</h3>
+      <div class="mt-5 space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Objective</p><p class="mt-1">Turn raw end-of-day market data into a decision-useful read on momentum and trend shifts across the Nasdaq-100.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Approach</p><p class="mt-1">Built an automated pipeline — fetch prices, compute price-change and relative-strength rankings across WTD/1W/MTD/1M/1Q/YTD/1Y, then attach the news driver behind each top mover — publishing a static dashboard after each market close.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Tools / Methods</p><p class="mt-1">Python · pandas · yfinance · HTML/JavaScript (Tailwind) · GitHub Actions · GitHub Pages</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Outcome</p><p class="mt-1">A live, self-updating page that ranks gainers and losers and pairs top movers with their drivers. Live analytics tool — figures update daily; for educational purposes, not financial advice.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Links</p><p class="mt-1"><a href="/markets.html" class="text-trustBlue hover:underline font-semibold">View live dashboard →</a></p></div>
+      </div>
+    </div>
+
+    <div id="detail-currys">
+      <p class="font-mono text-xs text-gray-500">Strategy · Consulting · Self-directed · February 2025 – April 2025</p>
+      <h3 class="font-serif text-2xl mt-1">Consumer Credit Expansion Case — Currys plc</h3>
+      <div class="mt-5 space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Objective</p><p class="mt-1">Assess the case for Currys expanding consumer credit beyond 23.7% of UK&amp;I sales, and build a repeatable consulting method from a BCG job simulation.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Approach</p><p class="mt-1">Built a seven-stage Evidence-to-Decision framework, reframing constraints around promotional subsidy and turning simulation deliverables into repeatable, executive-ready outputs.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Tools / Methods</p><p class="mt-1">Strategic analysis · Financial modelling · Stakeholder alignment · Executive synthesis</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Outcome</p><p class="mt-1">A 19-page playbook and six templates covering decision framing, financial modelling, research, stakeholder alignment and executive synthesis. Self-directed case study.</p></div>
+      </div>
+    </div>
+
+    <div id="detail-ob">
+      <p class="font-mono text-xs text-gray-500">Organisational Behaviour · Undergraduate research proposal · May 2026 – August 2026</p>
+      <h3 class="font-serif text-2xl mt-1">Informal Knowledge-Sharing in Remote Work — a Theoretical Review</h3>
+      <div class="mt-5 space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Research question</p><p class="mt-1">Why does informal knowledge-sharing decline in remote work environments?</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Methodology</p><p class="mt-1">Theoretical review; a critical examination of visibility, accountability and workplace reciprocity as alternatives to distance-based explanations.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Contribution</p><p class="mt-1">Developed the original concept of "visibility-contingent reciprocity" to explain declining informal knowledge-sharing. A research proposal / theoretical contribution — not an empirical finding.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Links</p><p class="mt-1"><a href="/assets/docs/research-proposal-reciprocity-remote-work.docx" class="text-trustBlue hover:underline font-semibold">Read proposal (DOCX) →</a></p></div>
+      </div>
+    </div>
+
+    <div id="detail-neko">
+      <p class="font-mono text-xs text-gray-500">International Business Strategy · Undergraduate research · May 2026 – August 2026</p>
+      <h3 class="font-serif text-2xl mt-1">International Market Entry: Sweden → UAE (Healthcare)</h3>
+      <div class="mt-5 space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Objective</p><p class="mt-1">Assess UAE healthcare market-entry opportunities for a Swedish firm and recommend an entry approach.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Methodology</p><p class="mt-1">PESTLE and Porter's Five Forces analysis; evaluation of international entry modes; application of the institution-based view to regulatory and institutional factors.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Outcome</p><p class="mt-1">Assessed market-entry opportunities and developed strategic approaches to mitigate entry risks. Academic strategy report.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Links</p><p class="mt-1"><a href="/assets/docs/neko-health-ib-strategy.docx" class="text-trustBlue hover:underline font-semibold">Read report (DOCX) →</a></p></div>
+      </div>
+    </div>
+
+    <div id="detail-tata">
+      <p class="font-mono text-xs text-gray-500">Strategic Human Resource Management · University coursework</p>
+      <h3 class="font-serif text-2xl mt-1">Strategic HRM — Tata Group</h3>
+      <div class="mt-5 space-y-4 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Summary</p><p class="mt-1">A strategic HRM analysis of the Tata Group covering recruitment, training, reward, diversity &amp; inclusion, and the HR business-partner (HRBP) model.</p></div>
+        <div><p class="eyebrow uppercase text-xs text-gray-500">Links</p><p class="mt-1"><a href="/assets/docs/hrm-strategy-tata.docx" class="text-trustBlue hover:underline font-semibold">Read report (DOCX) →</a></p></div>
+      </div>
+    </div>
+
+    <!-- CV modal body -->
+    <div id="detail-cv">
+      <h3 class="font-serif text-2xl">Curriculum Vitae</h3>
+      <p class="mt-1 text-sm text-gray-500">Ashok Sunuwar — CV</p>
+      <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <a href="/assets/cv.pdf" download class="font-semibold text-trustBlue hover:underline">Download CV →</a>
+        <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-trustBlue hover:underline">Open in new tab →</a>
+      </div>
+      <div class="mt-4 rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden bg-gray-50 dark:bg-gray-900/40">
+        <object data="/assets/cv.pdf" type="application/pdf" class="w-full" style="height:70vh" aria-label="CV preview">
+          <p class="p-6 text-sm text-gray-600 dark:text-gray-300">Your browser can't display the PDF inline. <a href="/assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="text-trustBlue hover:underline">Open the CV in a new tab →</a></p>
+        </object>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ONE SHARED MODAL ============ -->
+  <div id="pf-dialog" class="pf-dialog fixed inset-0 z-50 flex items-start sm:items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="pf-dialog-title" hidden>
+    <div id="pf-backdrop" class="absolute inset-0 bg-charcoal/60 dark:bg-black/70"></div>
+    <div class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-gray-200 dark:border-gray-800 bg-paper dark:bg-charcoal shadow-xl">
+      <div class="sticky top-0 flex justify-end p-3 bg-paper/90 dark:bg-charcoal/90 backdrop-blur border-b border-gray-100 dark:border-gray-800/60">
+        <button id="pf-close" type="button" class="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-trustBlue px-2 py-1 rounded" aria-label="Close dialog">Close ✕</button>
+      </div>
+      <div id="pf-dialog-body" class="px-6 pb-8 pt-2">
+        <h2 id="pf-dialog-title" class="sr-only">Details</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER (shared) ============ -->
+  <footer class="border-t border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-900/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center sm:justify-between text-sm">
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-7 h-7 rounded bg-charcoal text-paper dark:bg-paper dark:text-charcoal font-serif text-sm">J</span>
+        <span class="text-gray-600 dark:text-gray-400">© 2026 Ashok Sunuwar (Jespyucha) · Portfolio &amp; research.</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="mailto:sunuwara2@coventry.ac.uk" class="hover:text-trustBlue transition-colors">Email</a>
+        <a href="https://linkedin.com/in/ashoksunuwar" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">LinkedIn</a>
+        <a href="https://x.com/jespyucha" target="_blank" rel="noopener noreferrer" class="hover:text-trustBlue transition-colors">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- theme (same behaviour/key as the rest of the site) ----------
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) root.classList.add('dark');
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // ---------- section routing (hash-based, no reload) ----------
+    const pf = document.querySelector('.pf');
+    pf.setAttribute('data-js', 'on');                    // enable single-section mode
+    const sections = Array.from(document.querySelectorAll('.pf-section'));
+    const navlinks = Array.from(document.querySelectorAll('.pf-navlink'));
+    const SECTION_IDS = sections.map(s => s.id);
+
+    function showSection(id, {focus = false} = {}) {
+      if (!SECTION_IDS.includes(id)) id = 'about';
+      sections.forEach(s => {
+        const active = s.id === id;
+        s.classList.toggle('is-active', active);
+        s.hidden = !active;
+      });
+      navlinks.forEach(a => {
+        const target = a.getAttribute('href').slice(1);
+        a.setAttribute('aria-current', target === id ? 'true' : 'false');
+      });
+      if (focus) {
+        const el = document.getElementById(id);
+        if (el) el.focus({preventScroll: true});
+      }
+    }
+
+    function routeFromHash(opts) {
+      const hash = location.hash.replace('#', '');
+      if (hash === 'cv') { openDialog('detail-cv'); showSection('about'); return; }
+      showSection(hash || 'about', opts);
+    }
+
+    navlinks.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (a.dataset.cv) { e.preventDefault(); openDialog('detail-cv'); return; }
+        e.preventDefault();
+        const id = href.slice(1);
+        history.pushState(null, '', href);
+        showSection(id, {focus: true});
+        window.scrollTo({top: 0, behavior: 'instant' in window ? 'instant' : 'auto'});
+      });
+    });
+    window.addEventListener('popstate', () => routeFromHash());
+    window.addEventListener('hashchange', () => routeFromHash());
+
+    // ---------- modal system ----------
+    const dialog = document.getElementById('pf-dialog');
+    const dialogBody = document.getElementById('pf-dialog-body');
+    const closeBtn = document.getElementById('pf-close');
+    const backdrop = document.getElementById('pf-backdrop');
+    let lastFocused = null;
+
+    function openDialog(detailId) {
+      const source = document.getElementById(detailId);
+      if (!source) return;
+      lastFocused = document.activeElement;
+      dialogBody.innerHTML = '<h2 id="pf-dialog-title" class="sr-only">Details</h2>' + source.innerHTML;
+      dialog.hidden = false;
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+      document.addEventListener('keydown', onKeydown);
+    }
+    function closeDialog() {
+      dialog.hidden = true;
+      dialogBody.innerHTML = '<h2 id="pf-dialog-title" class="sr-only">Details</h2>';
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKeydown);
+      if (location.hash === '#cv') history.replaceState(null, '', location.pathname);
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+    function onKeydown(e) {
+      if (e.key === 'Escape') { closeDialog(); return; }
+      if (e.key === 'Tab') {           // simple focus trap
+        const focusables = dialog.querySelectorAll('a[href], button, object, [tabindex]:not([tabindex="-1"])');
+        if (!focusables.length) return;
+        const first = focusables[0], last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+    document.querySelectorAll('.pf-open').forEach(b =>
+      b.addEventListener('click', () => openDialog(b.dataset.detail)));
+    closeBtn.addEventListener('click', closeDialog);
+    backdrop.addEventListener('click', closeDialog);
+
+    // ---------- initial route ----------
+    routeFromHash();
+  </script>
+</body>
+</html>
