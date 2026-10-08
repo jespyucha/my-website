@@ -1,7 +1,7 @@
 {
   "index": "Nasdaq-100",
   "as_of": "2026-10-06",
-  "generated_at": "2026-10-07T00:53:00+00:00",
+  "generated_at": "2026-10-08T01:09:33+00:00",
   "windows": [
     "WTD",
     "1W",
@@ -26,26 +26,26 @@
         "YTD": 23.06,
         "1Y": 30.45
       },
-      "vol_ratio": 0.72,
+      "vol_ratio": 0.73,
       "pct_from_high": -2.18,
       "pct_from_low": 36.53
     },
     {
       "ticker": "ABNB",
       "name": "Airbnb",
-      "last": 164.07,
+      "last": 160.39,
       "changes": {
-        "WTD": 1.01,
-        "1W": 4.53,
-        "MTD": 2.13,
-        "1M": -9.82,
-        "1Q": 11.12,
-        "YTD": 20.89,
-        "1Y": 36.33
+        "WTD": -1.26,
+        "1W": 2.19,
+        "MTD": -0.16,
+        "1M": -11.84,
+        "1Q": 8.63,
+        "YTD": 18.18,
+        "1Y": 33.27
       },
-      "vol_ratio": 0.83,
-      "pct_from_high": -13.87,
-      "pct_from_low": 47.1
+      "vol_ratio": 0.67,
+      "pct_from_high": -15.81,
+      "pct_from_low": 43.8
     },
     {
       "ticker": "ADBE",
@@ -203,36 +203,36 @@
     {
       "ticker": "APP",
       "name": "AppLovin",
-      "last": 281.97,
+      "last": 278.78,
       "changes": {
-        "WTD": 5.13,
-        "1W": -7.75,
-        "MTD": -2.91,
-        "1M": -12.04,
-        "1Q": -48.15,
-        "YTD": -58.15,
-        "1Y": -51.96
+        "WTD": 3.94,
+        "1W": -8.79,
+        "MTD": -4.01,
+        "1M": -13.03,
+        "1Q": -48.73,
+        "YTD": -58.63,
+        "1Y": -52.51
       },
-      "vol_ratio": 1.31,
-      "pct_from_high": -61.56,
-      "pct_from_low": 5.13
+      "vol_ratio": 0.8,
+      "pct_from_high": -62.0,
+      "pct_from_low": 3.94
     },
     {
       "ticker": "ARM",
       "name": "Arm Holdings",
-      "last": 302.9,
+      "last": 302.56,
       "changes": {
-        "WTD": -1.49,
-        "1W": 3.14,
-        "MTD": 4.57,
-        "1M": 20.16,
-        "1Q": -6.0,
-        "YTD": 177.1,
-        "1Y": 93.89
+        "WTD": -1.6,
+        "1W": 3.03,
+        "MTD": 4.45,
+        "1M": 20.02,
+        "1Q": -6.11,
+        "YTD": 176.79,
+        "1Y": 93.68
       },
-      "vol_ratio": 0.49,
-      "pct_from_high": -31.07,
-      "pct_from_low": 189.72
+      "vol_ratio": 0.58,
+      "pct_from_high": -31.15,
+      "pct_from_low": 189.39
     },
     {
       "ticker": "ASML",
@@ -298,7 +298,7 @@
         "YTD": -25.88,
         "1Y": -26.63
       },
-      "vol_ratio": 0.76,
+      "vol_ratio": 0.78,
       "pct_from_high": -27.73,
       "pct_from_low": 2.78
     },
@@ -339,36 +339,36 @@
     {
       "ticker": "CDW",
       "name": "CDW Corp",
-      "last": 133.92,
+      "last": 135.67,
       "changes": {
-        "WTD": 0.47,
-        "1W": 3.25,
-        "MTD": 4.49,
-        "1M": -12.11,
-        "1Q": 0.28,
-        "YTD": -0.12,
-        "1Y": -13.16
+        "WTD": 1.79,
+        "1W": 4.59,
+        "MTD": 5.86,
+        "1M": -10.97,
+        "1Q": 1.59,
+        "YTD": 1.19,
+        "1Y": -12.02
       },
-      "vol_ratio": 0.72,
-      "pct_from_high": -14.26,
-      "pct_from_low": 36.31
+      "vol_ratio": 0.47,
+      "pct_from_high": -13.14,
+      "pct_from_low": 38.09
     },
     {
       "ticker": "CEG",
       "name": "Constellation Energy",
-      "last": 267.62,
+      "last": 300.4,
       "changes": {
-        "WTD": 3.93,
-        "1W": 1.15,
-        "MTD": 5.35,
-        "1M": -10.48,
-        "1Q": 9.01,
-        "YTD": -23.91,
-        "1Y": -26.09
+        "WTD": 16.66,
+        "1W": 13.54,
+        "MTD": 18.26,
+        "1M": 0.48,
+        "1Q": 22.37,
+        "YTD": -14.59,
+        "1Y": -17.03
       },
-      "vol_ratio": 1.15,
-      "pct_from_high": -33.38,
-      "pct_from_low": 13.33
+      "vol_ratio": 4.36,
+      "pct_from_high": -25.22,
+      "pct_from_low": 27.21
     },
     {
       "ticker": "CHTR",
@@ -441,19 +441,19 @@
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
-      "last": 272.67,
+      "last": 278.86,
       "changes": {
-        "WTD": 0.97,
-        "1W": 3.78,
-        "MTD": 2.99,
-        "1M": 27.95,
-        "1Q": 36.76,
-        "YTD": 132.67,
-        "1Y": 119.92
+        "WTD": 3.27,
+        "1W": 6.14,
+        "MTD": 5.33,
+        "1M": 30.86,
+        "1Q": 39.86,
+        "YTD": 137.96,
+        "1Y": 124.91
       },
-      "vol_ratio": 0.46,
+      "vol_ratio": 0.76,
       "pct_from_high": 0.0,
-      "pct_from_low": 211.4
+      "pct_from_low": 218.47
     },
     {
       "ticker": "CSCO",
@@ -543,36 +543,36 @@
     {
       "ticker": "DASH",
       "name": "DoorDash",
-      "last": 191.77,
+      "last": 193.62,
       "changes": {
-        "WTD": 1.39,
-        "1W": 2.5,
-        "MTD": 4.48,
-        "1M": -9.43,
-        "1Q": 1.76,
-        "YTD": -15.33,
-        "1Y": -31.93
+        "WTD": 2.36,
+        "1W": 3.48,
+        "MTD": 5.49,
+        "1M": -8.55,
+        "1Q": 2.74,
+        "YTD": -14.51,
+        "1Y": -31.28
       },
-      "vol_ratio": 0.67,
-      "pct_from_high": -31.93,
-      "pct_from_low": 30.81
+      "vol_ratio": 0.68,
+      "pct_from_high": -31.28,
+      "pct_from_low": 32.07
     },
     {
       "ticker": "DDOG",
       "name": "Datadog",
-      "last": 276.42,
+      "last": 278.24,
       "changes": {
-        "WTD": -0.29,
-        "1W": 2.92,
-        "MTD": 0.94,
-        "1M": 29.81,
-        "1Q": 8.24,
-        "YTD": 103.26,
-        "1Y": 75.66
+        "WTD": 0.37,
+        "1W": 3.6,
+        "MTD": 1.6,
+        "1M": 30.67,
+        "1Q": 8.96,
+        "YTD": 104.6,
+        "1Y": 76.82
       },
-      "vol_ratio": 0.7,
-      "pct_from_high": -4.07,
-      "pct_from_low": 169.37
+      "vol_ratio": 0.53,
+      "pct_from_high": -3.44,
+      "pct_from_low": 171.15
     },
     {
       "ticker": "DXCM",
@@ -628,19 +628,19 @@
     {
       "ticker": "FANG",
       "name": "Diamondback Energy",
-      "last": 184.08,
+      "last": 184.98,
       "changes": {
-        "WTD": -0.34,
-        "1W": 0.07,
-        "MTD": 0.15,
-        "1M": -7.6,
-        "1Q": 6.54,
-        "YTD": 24.54,
-        "1Y": 26.43
+        "WTD": 0.15,
+        "1W": 0.56,
+        "MTD": 0.64,
+        "1M": -7.15,
+        "1Q": 7.06,
+        "YTD": 25.15,
+        "1Y": 27.05
       },
-      "vol_ratio": 0.87,
-      "pct_from_high": -12.98,
-      "pct_from_low": 37.31
+      "vol_ratio": 0.97,
+      "pct_from_high": -12.55,
+      "pct_from_low": 37.98
     },
     {
       "ticker": "FAST",
@@ -679,36 +679,36 @@
     {
       "ticker": "GEHC",
       "name": "GE HealthCare",
-      "last": 65.74,
+      "last": 64.77,
       "changes": {
-        "WTD": 2.26,
-        "1W": -1.08,
-        "MTD": 0.57,
-        "1M": -4.53,
-        "1Q": 1.45,
-        "YTD": -19.73,
-        "1Y": -13.8
+        "WTD": 0.75,
+        "1W": -2.54,
+        "MTD": -0.92,
+        "1M": -5.94,
+        "1Q": -0.05,
+        "YTD": -20.92,
+        "1Y": -15.07
       },
-      "vol_ratio": 1.17,
-      "pct_from_high": -25.32,
-      "pct_from_low": 10.58
+      "vol_ratio": 0.95,
+      "pct_from_high": -26.42,
+      "pct_from_low": 8.95
     },
     {
       "ticker": "GFS",
       "name": "GlobalFoundries",
-      "last": 48.56,
+      "last": 48.63,
       "changes": {
-        "WTD": -3.21,
-        "1W": 1.46,
-        "MTD": 1.34,
-        "1M": 7.68,
-        "1Q": -29.35,
-        "YTD": 39.61,
-        "1Y": 35.65
+        "WTD": -3.07,
+        "1W": 1.61,
+        "MTD": 1.48,
+        "1M": 7.83,
+        "1Q": -29.25,
+        "YTD": 39.81,
+        "1Y": 35.84
       },
-      "vol_ratio": 1.16,
-      "pct_from_high": -45.81,
-      "pct_from_low": 51.22
+      "vol_ratio": 0.61,
+      "pct_from_high": -45.73,
+      "pct_from_low": 51.43
     },
     {
       "ticker": "GILD",
@@ -730,19 +730,19 @@
     {
       "ticker": "GOOG",
       "name": "Alphabet (Class C)",
-      "last": 343.83,
+      "last": 344.59,
       "changes": {
-        "WTD": 1.02,
-        "1W": 1.93,
-        "MTD": 0.91,
-        "1M": 2.54,
-        "1Q": -5.71,
-        "YTD": 9.78,
-        "1Y": 37.06
+        "WTD": 1.25,
+        "1W": 2.16,
+        "MTD": 1.13,
+        "1M": 2.77,
+        "1Q": -5.5,
+        "YTD": 10.03,
+        "1Y": 37.37
       },
-      "vol_ratio": 0.78,
-      "pct_from_high": -13.73,
-      "pct_from_low": 45.15
+      "vol_ratio": 0.73,
+      "pct_from_high": -13.54,
+      "pct_from_low": 45.48
     },
     {
       "ticker": "GOOGL",
@@ -757,7 +757,7 @@
         "YTD": 11.3,
         "1Y": 39.19
       },
-      "vol_ratio": 0.67,
+      "vol_ratio": 0.68,
       "pct_from_high": -13.54,
       "pct_from_low": 47.35
     },
@@ -808,7 +808,7 @@
         "YTD": 204.88,
         "1Y": 207.46
       },
-      "vol_ratio": 0.91,
+      "vol_ratio": 0.92,
       "pct_from_high": -20.18,
       "pct_from_low": 234.62
     },
@@ -866,19 +866,19 @@
     {
       "ticker": "KHC",
       "name": "Kraft Heinz",
-      "last": 21.84,
+      "last": 22.03,
       "changes": {
-        "WTD": -1.58,
-        "1W": -6.87,
-        "MTD": -3.87,
-        "1M": -12.11,
-        "1Q": -10.6,
-        "YTD": -5.28,
-        "1Y": -7.66
+        "WTD": -0.72,
+        "1W": -6.06,
+        "MTD": -3.04,
+        "1M": -11.35,
+        "1Q": -9.82,
+        "YTD": -4.45,
+        "1Y": -6.85
       },
-      "vol_ratio": 0.76,
-      "pct_from_high": -19.66,
-      "pct_from_low": 6.51
+      "vol_ratio": 0.93,
+      "pct_from_high": -18.96,
+      "pct_from_low": 7.44
     },
     {
       "ticker": "KLAC",
@@ -1019,19 +1019,19 @@
     {
       "ticker": "META",
       "name": "Meta Platforms",
-      "last": 741.9,
+      "last": 738.88,
       "changes": {
-        "WTD": 1.9,
-        "1W": 0.42,
-        "MTD": 2.31,
-        "1M": 20.38,
-        "1Q": 23.69,
-        "YTD": 12.68,
-        "1Y": 4.02
+        "WTD": 1.48,
+        "1W": 0.01,
+        "MTD": 1.89,
+        "1M": 19.89,
+        "1Q": 23.18,
+        "YTD": 12.22,
+        "1Y": 3.59
       },
-      "vol_ratio": 0.64,
-      "pct_from_high": -4.59,
-      "pct_from_low": 41.36
+      "vol_ratio": 0.53,
+      "pct_from_high": -4.98,
+      "pct_from_low": 40.79
     },
     {
       "ticker": "MNST",
@@ -1063,7 +1063,7 @@
         "YTD": 238.23,
         "1Y": 223.46
       },
-      "vol_ratio": 2.96,
+      "vol_ratio": 2.97,
       "pct_from_high": -9.28,
       "pct_from_low": 289.56
     },
@@ -1114,7 +1114,7 @@
         "YTD": -26.74,
         "1Y": -40.95
       },
-      "vol_ratio": 0.98,
+      "vol_ratio": 0.99,
       "pct_from_high": -44.67,
       "pct_from_low": 2.43
     },
@@ -1131,7 +1131,7 @@
         "YTD": 28.58,
         "1Y": 29.25
       },
-      "vol_ratio": 0.92,
+      "vol_ratio": 0.93,
       "pct_from_high": 0.0,
       "pct_from_low": 45.18
     },
@@ -1206,19 +1206,19 @@
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
-      "last": 406.76,
+      "last": 419.91,
       "changes": {
-        "WTD": 0.87,
-        "1W": 4.72,
-        "MTD": 2.38,
-        "1M": 22.05,
-        "1Q": 13.77,
-        "YTD": 120.83,
-        "1Y": 91.34
+        "WTD": 4.13,
+        "1W": 8.11,
+        "MTD": 5.69,
+        "1M": 26.0,
+        "1Q": 17.45,
+        "YTD": 127.96,
+        "1Y": 97.53
       },
-      "vol_ratio": 0.71,
+      "vol_ratio": 0.88,
       "pct_from_high": 0.0,
-      "pct_from_low": 187.12
+      "pct_from_low": 196.4
     },
     {
       "ticker": "PAYX",
@@ -1257,19 +1257,19 @@
     {
       "ticker": "PDD",
       "name": "PDD Holdings",
-      "last": 77.9,
+      "last": 78.4,
       "changes": {
-        "WTD": 3.34,
-        "1W": 0.52,
-        "MTD": -0.05,
-        "1M": -5.24,
-        "1Q": -6.97,
-        "YTD": -31.3,
-        "1Y": -42.01
+        "WTD": 4.01,
+        "1W": 1.16,
+        "MTD": 0.59,
+        "1M": -4.63,
+        "1Q": -6.38,
+        "YTD": -30.86,
+        "1Y": -41.64
       },
-      "vol_ratio": 0.82,
-      "pct_from_high": -43.6,
-      "pct_from_low": 6.28
+      "vol_ratio": 0.67,
+      "pct_from_high": -43.24,
+      "pct_from_low": 6.96
     },
     {
       "ticker": "PEP",
@@ -1291,36 +1291,36 @@
     {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
-      "last": 189.4,
+      "last": 192.07,
       "changes": {
-        "WTD": 0.34,
-        "1W": 1.3,
-        "MTD": 1.26,
-        "1M": 8.64,
-        "1Q": 42.9,
-        "YTD": 6.55,
-        "1Y": 5.5
+        "WTD": 1.76,
+        "1W": 2.73,
+        "MTD": 2.68,
+        "1M": 10.18,
+        "1Q": 44.91,
+        "YTD": 8.06,
+        "1Y": 6.98
       },
-      "vol_ratio": 0.77,
-      "pct_from_high": -8.58,
-      "pct_from_low": 76.56
+      "vol_ratio": 0.78,
+      "pct_from_high": -7.29,
+      "pct_from_low": 79.05
     },
     {
       "ticker": "PYPL",
       "name": "PayPal Holdings",
-      "last": 54.41,
+      "last": 54.61,
       "changes": {
-        "WTD": 3.05,
-        "1W": 0.96,
-        "MTD": 3.58,
-        "1M": -1.0,
-        "1Q": 20.97,
-        "YTD": -5.98,
-        "1Y": -22.83
+        "WTD": 3.43,
+        "1W": 1.34,
+        "MTD": 3.96,
+        "1M": -0.64,
+        "1Q": 21.41,
+        "YTD": -5.63,
+        "1Y": -22.54
       },
-      "vol_ratio": 0.69,
-      "pct_from_high": -27.73,
-      "pct_from_low": 40.46
+      "vol_ratio": 0.59,
+      "pct_from_high": -27.47,
+      "pct_from_low": 40.97
     },
     {
       "ticker": "QCOM",
@@ -1427,19 +1427,19 @@
     {
       "ticker": "TEAM",
       "name": "Atlassian",
-      "last": 196.65,
+      "last": 193.98,
       "changes": {
-        "WTD": 4.66,
-        "1W": 11.76,
-        "MTD": 9.68,
-        "1M": 3.73,
-        "1Q": 130.0,
-        "YTD": 21.28,
-        "1Y": 30.93
+        "WTD": 3.24,
+        "1W": 10.24,
+        "MTD": 8.19,
+        "1M": 2.32,
+        "1Q": 126.88,
+        "YTD": 19.64,
+        "1Y": 29.16
       },
-      "vol_ratio": 0.98,
-      "pct_from_high": 0.0,
-      "pct_from_low": 244.09
+      "vol_ratio": 0.63,
+      "pct_from_high": -1.36,
+      "pct_from_low": 239.42
     },
     {
       "ticker": "TMUS",
@@ -1478,19 +1478,19 @@
     {
       "ticker": "TTD",
       "name": "The Trade Desk",
-      "last": 11.98,
+      "last": 11.92,
       "changes": {
-        "WTD": 0.25,
-        "1W": -0.58,
-        "MTD": -1.56,
-        "1M": -16.98,
-        "1Q": -37.96,
-        "YTD": -68.44,
-        "1Y": -77.46
+        "WTD": -0.25,
+        "1W": -1.08,
+        "MTD": -2.05,
+        "1M": -17.39,
+        "1Q": -38.27,
+        "YTD": -68.6,
+        "1Y": -77.57
       },
-      "vol_ratio": 0.95,
-      "pct_from_high": -77.87,
-      "pct_from_low": 0.25
+      "vol_ratio": 0.53,
+      "pct_from_high": -77.98,
+      "pct_from_low": 0.0
     },
     {
       "ticker": "TTWO",
@@ -1565,34 +1565,34 @@
       "name": "Warner Bros. Discovery",
       "last": 30.95,
       "changes": {
-        "WTD": 0.03,
-        "1W": 0.32,
-        "MTD": 0.0,
-        "1M": 9.56,
-        "1Q": 18.49,
-        "YTD": 7.39,
-        "1Y": 62.21
+        "WTD": null,
+        "1W": null,
+        "MTD": null,
+        "1M": null,
+        "1Q": null,
+        "YTD": null,
+        "1Y": null
       },
-      "vol_ratio": 0.0,
+      "vol_ratio": 1.0,
       "pct_from_high": 0.0,
-      "pct_from_low": 80.99
+      "pct_from_low": 0.0
     },
     {
       "ticker": "WDAY",
       "name": "Workday",
-      "last": 188.96,
+      "last": 186.55,
       "changes": {
-        "WTD": 1.51,
-        "1W": -0.11,
-        "MTD": -0.79,
-        "1M": -3.49,
-        "1Q": 36.94,
-        "YTD": -12.02,
-        "1Y": -20.72
+        "WTD": 0.22,
+        "1W": -1.38,
+        "MTD": -2.05,
+        "1M": -4.72,
+        "1Q": 35.19,
+        "YTD": -13.14,
+        "1Y": -21.74
       },
-      "vol_ratio": 0.88,
-      "pct_from_high": -23.08,
-      "pct_from_low": 67.96
+      "vol_ratio": 0.8,
+      "pct_from_high": -24.06,
+      "pct_from_low": 65.82
     },
     {
       "ticker": "XEL",
@@ -1614,24 +1614,31 @@
     {
       "ticker": "ZS",
       "name": "Zscaler",
-      "last": 201.8,
+      "last": 212.25,
       "changes": {
-        "WTD": 2.64,
-        "1W": 1.74,
-        "MTD": 1.19,
-        "1M": 18.85,
-        "1Q": 34.16,
-        "YTD": -10.28,
-        "1Y": -33.89
+        "WTD": 7.96,
+        "1W": 7.01,
+        "MTD": 6.43,
+        "1M": 25.0,
+        "1Q": 41.1,
+        "YTD": -5.63,
+        "1Y": -30.46
       },
-      "vol_ratio": 0.67,
-      "pct_from_high": -39.99,
-      "pct_from_low": 70.94
+      "vol_ratio": 1.3,
+      "pct_from_high": -36.88,
+      "pct_from_low": 79.8
     }
   ],
   "leaders": {
     "WTD": {
       "gainers": [
+        {
+          "ticker": "CEG",
+          "name": "Constellation Energy",
+          "last": 300.4,
+          "change": 16.66,
+          "vol_ratio": 4.36
+        },
         {
           "ticker": "MELI",
           "name": "MercadoLibre",
@@ -1645,6 +1652,13 @@
           "last": 231.28,
           "change": 9.09,
           "vol_ratio": 0.97
+        },
+        {
+          "ticker": "ZS",
+          "name": "Zscaler",
+          "last": 212.25,
+          "change": 7.96,
+          "vol_ratio": 1.3
         },
         {
           "ticker": "AVGO",
@@ -1665,14 +1679,7 @@
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 5.41,
-          "vol_ratio": 2.96
-        },
-        {
-          "ticker": "APP",
-          "name": "AppLovin",
-          "last": 281.97,
-          "change": 5.13,
-          "vol_ratio": 1.31
+          "vol_ratio": 2.97
         },
         {
           "ticker": "CSCO",
@@ -1682,25 +1689,18 @@
           "vol_ratio": 1.13
         },
         {
-          "ticker": "TEAM",
-          "name": "Atlassian",
-          "last": 196.65,
-          "change": 4.66,
-          "vol_ratio": 0.98
-        },
-        {
-          "ticker": "CEG",
-          "name": "Constellation Energy",
-          "last": 267.62,
-          "change": 3.93,
-          "vol_ratio": 1.15
+          "ticker": "PANW",
+          "name": "Palo Alto Networks",
+          "last": 419.91,
+          "change": 4.13,
+          "vol_ratio": 0.88
         },
         {
           "ticker": "PDD",
           "name": "PDD Holdings",
-          "last": 77.9,
-          "change": 3.34,
-          "vol_ratio": 0.82
+          "last": 78.4,
+          "change": 4.01,
+          "vol_ratio": 0.67
         }
       ],
       "losers": [
@@ -1709,7 +1709,7 @@
           "name": "Intel",
           "last": 112.5,
           "change": -5.72,
-          "vol_ratio": 0.91
+          "vol_ratio": 0.92
         },
         {
           "ticker": "KLAC",
@@ -1728,9 +1728,9 @@
         {
           "ticker": "GFS",
           "name": "GlobalFoundries",
-          "last": 48.56,
-          "change": -3.21,
-          "vol_ratio": 1.16
+          "last": 48.63,
+          "change": -3.07,
+          "vol_ratio": 0.61
         },
         {
           "ticker": "MU",
@@ -1800,11 +1800,11 @@
           "vol_ratio": 0.7
         },
         {
-          "ticker": "TEAM",
-          "name": "Atlassian",
-          "last": 196.65,
-          "change": 11.76,
-          "vol_ratio": 0.98
+          "ticker": "CEG",
+          "name": "Constellation Energy",
+          "last": 300.4,
+          "change": 13.54,
+          "vol_ratio": 4.36
         },
         {
           "ticker": "CDNS",
@@ -1821,11 +1821,18 @@
           "vol_ratio": 1.13
         },
         {
+          "ticker": "TEAM",
+          "name": "Atlassian",
+          "last": 193.98,
+          "change": 10.24,
+          "vol_ratio": 0.63
+        },
+        {
           "ticker": "MRVL",
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 9.02,
-          "vol_ratio": 2.96
+          "vol_ratio": 2.97
         },
         {
           "ticker": "FTNT",
@@ -1840,29 +1847,22 @@
           "last": 289.81,
           "change": 8.13,
           "vol_ratio": 0.95
-        },
-        {
-          "ticker": "TSLA",
-          "name": "Tesla",
-          "last": 380.68,
-          "change": 7.89,
-          "vol_ratio": 0.75
         }
       ],
       "losers": [
         {
           "ticker": "APP",
           "name": "AppLovin",
-          "last": 281.97,
-          "change": -7.75,
-          "vol_ratio": 1.31
+          "last": 278.78,
+          "change": -8.79,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "KHC",
           "name": "Kraft Heinz",
-          "last": 21.84,
-          "change": -6.87,
-          "vol_ratio": 0.76
+          "last": 22.03,
+          "change": -6.06,
+          "vol_ratio": 0.93
         },
         {
           "ticker": "AMGN",
@@ -1925,6 +1925,13 @@
     "MTD": {
       "gainers": [
         {
+          "ticker": "CEG",
+          "name": "Constellation Energy",
+          "last": 300.4,
+          "change": 18.26,
+          "vol_ratio": 4.36
+        },
+        {
           "ticker": "SNPS",
           "name": "Synopsys",
           "last": 505.17,
@@ -1953,13 +1960,6 @@
           "vol_ratio": 1.13
         },
         {
-          "ticker": "TEAM",
-          "name": "Atlassian",
-          "last": 196.65,
-          "change": 9.68,
-          "vol_ratio": 0.98
-        },
-        {
           "ticker": "CDNS",
           "name": "Cadence Design Systems",
           "last": 359.55,
@@ -1971,7 +1971,14 @@
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 8.63,
-          "vol_ratio": 2.96
+          "vol_ratio": 2.97
+        },
+        {
+          "ticker": "TEAM",
+          "name": "Atlassian",
+          "last": 193.98,
+          "change": 8.19,
+          "vol_ratio": 0.63
         },
         {
           "ticker": "MELI",
@@ -1986,13 +1993,6 @@
           "last": 380.68,
           "change": 7.29,
           "vol_ratio": 0.75
-        },
-        {
-          "ticker": "AVGO",
-          "name": "Broadcom",
-          "last": 375.81,
-          "change": 7.01,
-          "vol_ratio": 1.26
         }
       ],
       "losers": [
@@ -2001,7 +2001,7 @@
           "name": "Intel",
           "last": 112.5,
           "change": -6.43,
-          "vol_ratio": 0.91
+          "vol_ratio": 0.92
         },
         {
           "ticker": "AMGN",
@@ -2009,6 +2009,13 @@
           "last": 402.6,
           "change": -4.49,
           "vol_ratio": 0.6
+        },
+        {
+          "ticker": "APP",
+          "name": "AppLovin",
+          "last": 278.78,
+          "change": -4.01,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "ROST",
@@ -2025,13 +2032,6 @@
           "vol_ratio": 0.76
         },
         {
-          "ticker": "KHC",
-          "name": "Kraft Heinz",
-          "last": 21.84,
-          "change": -3.87,
-          "vol_ratio": 0.76
-        },
-        {
           "ticker": "DXCM",
           "name": "DexCom",
           "last": 83.39,
@@ -2043,7 +2043,7 @@
           "name": "Booking Holdings",
           "last": 157.63,
           "change": -3.24,
-          "vol_ratio": 0.76
+          "vol_ratio": 0.78
         },
         {
           "ticker": "GILD",
@@ -2053,11 +2053,11 @@
           "vol_ratio": 0.63
         },
         {
-          "ticker": "APP",
-          "name": "AppLovin",
-          "last": 281.97,
-          "change": -2.91,
-          "vol_ratio": 1.31
+          "ticker": "KHC",
+          "name": "Kraft Heinz",
+          "last": 22.03,
+          "change": -3.04,
+          "vol_ratio": 0.93
         },
         {
           "ticker": "LULU",
@@ -2078,18 +2078,25 @@
           "vol_ratio": 1.08
         },
         {
+          "ticker": "CRWD",
+          "name": "CrowdStrike",
+          "last": 278.86,
+          "change": 30.86,
+          "vol_ratio": 0.76
+        },
+        {
           "ticker": "DDOG",
           "name": "Datadog",
-          "last": 276.42,
-          "change": 29.81,
-          "vol_ratio": 0.7
+          "last": 278.24,
+          "change": 30.67,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "MRVL",
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 28.39,
-          "vol_ratio": 2.96
+          "vol_ratio": 2.97
         },
         {
           "ticker": "SNPS",
@@ -2099,11 +2106,18 @@
           "vol_ratio": 1.16
         },
         {
-          "ticker": "CRWD",
-          "name": "CrowdStrike",
-          "last": 272.67,
-          "change": 27.95,
-          "vol_ratio": 0.46
+          "ticker": "PANW",
+          "name": "Palo Alto Networks",
+          "last": 419.91,
+          "change": 26.0,
+          "vol_ratio": 0.88
+        },
+        {
+          "ticker": "ZS",
+          "name": "Zscaler",
+          "last": 212.25,
+          "change": 25.0,
+          "vol_ratio": 1.3
         },
         {
           "ticker": "CDNS",
@@ -2120,25 +2134,11 @@
           "vol_ratio": 1.07
         },
         {
-          "ticker": "PANW",
-          "name": "Palo Alto Networks",
-          "last": 406.76,
-          "change": 22.05,
-          "vol_ratio": 0.71
-        },
-        {
-          "ticker": "META",
-          "name": "Meta Platforms",
-          "last": 741.9,
-          "change": 20.38,
-          "vol_ratio": 0.64
-        },
-        {
           "ticker": "ARM",
           "name": "Arm Holdings",
-          "last": 302.9,
-          "change": 20.16,
-          "vol_ratio": 0.49
+          "last": 302.56,
+          "change": 20.02,
+          "vol_ratio": 0.58
         }
       ],
       "losers": [
@@ -2168,7 +2168,14 @@
           "name": "Booking Holdings",
           "last": 157.63,
           "change": -18.25,
-          "vol_ratio": 0.76
+          "vol_ratio": 0.78
+        },
+        {
+          "ticker": "TTD",
+          "name": "The Trade Desk",
+          "last": 11.92,
+          "change": -17.39,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "PAYX",
@@ -2178,11 +2185,11 @@
           "vol_ratio": 0.61
         },
         {
-          "ticker": "TTD",
-          "name": "The Trade Desk",
-          "last": 11.98,
-          "change": -16.98,
-          "vol_ratio": 0.95
+          "ticker": "APP",
+          "name": "AppLovin",
+          "last": 278.78,
+          "change": -13.03,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "INTU",
@@ -2203,14 +2210,7 @@
           "name": "Netflix",
           "last": 68.69,
           "change": -12.22,
-          "vol_ratio": 0.98
-        },
-        {
-          "ticker": "KHC",
-          "name": "Kraft Heinz",
-          "last": 21.84,
-          "change": -12.11,
-          "vol_ratio": 0.76
+          "vol_ratio": 0.99
         }
       ]
     },
@@ -2219,16 +2219,30 @@
         {
           "ticker": "TEAM",
           "name": "Atlassian",
-          "last": 196.65,
-          "change": 130.0,
-          "vol_ratio": 0.98
+          "last": 193.98,
+          "change": 126.88,
+          "vol_ratio": 0.63
         },
         {
           "ticker": "PLTR",
           "name": "Palantir Technologies",
-          "last": 189.4,
-          "change": 42.9,
-          "vol_ratio": 0.77
+          "last": 192.07,
+          "change": 44.91,
+          "vol_ratio": 0.78
+        },
+        {
+          "ticker": "ZS",
+          "name": "Zscaler",
+          "last": 212.25,
+          "change": 41.1,
+          "vol_ratio": 1.3
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CrowdStrike",
+          "last": 278.86,
+          "change": 39.86,
+          "vol_ratio": 0.76
         },
         {
           "ticker": "CTSH",
@@ -2247,67 +2261,53 @@
         {
           "ticker": "WDAY",
           "name": "Workday",
-          "last": 188.96,
-          "change": 36.94,
-          "vol_ratio": 0.88
-        },
-        {
-          "ticker": "CRWD",
-          "name": "CrowdStrike",
-          "last": 272.67,
-          "change": 36.76,
-          "vol_ratio": 0.46
-        },
-        {
-          "ticker": "ZS",
-          "name": "Zscaler",
-          "last": 201.8,
-          "change": 34.16,
-          "vol_ratio": 0.67
+          "last": 186.55,
+          "change": 35.19,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "META",
           "name": "Meta Platforms",
-          "last": 741.9,
-          "change": 23.69,
-          "vol_ratio": 0.64
+          "last": 738.88,
+          "change": 23.18,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "NVDA",
           "name": "NVIDIA",
           "last": 239.24,
           "change": 22.48,
-          "vol_ratio": 0.92
+          "vol_ratio": 0.93
         },
         {
-          "ticker": "PYPL",
-          "name": "PayPal Holdings",
-          "last": 54.41,
-          "change": 20.97,
-          "vol_ratio": 0.69
+          "ticker": "CEG",
+          "name": "Constellation Energy",
+          "last": 300.4,
+          "change": 22.37,
+          "vol_ratio": 4.36
         }
       ],
       "losers": [
         {
           "ticker": "APP",
           "name": "AppLovin",
-          "last": 281.97,
-          "change": -48.15,
-          "vol_ratio": 1.31
+          "last": 278.78,
+          "change": -48.73,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "TTD",
           "name": "The Trade Desk",
-          "last": 11.98,
-          "change": -37.96,
-          "vol_ratio": 0.95
+          "last": 11.92,
+          "change": -38.27,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "GFS",
           "name": "GlobalFoundries",
-          "last": 48.56,
-          "change": -29.35,
-          "vol_ratio": 1.16
+          "last": 48.63,
+          "change": -29.25,
+          "vol_ratio": 0.61
         },
         {
           "ticker": "TTWO",
@@ -2374,14 +2374,14 @@
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 238.23,
-          "vol_ratio": 2.96
+          "vol_ratio": 2.97
         },
         {
           "ticker": "INTC",
           "name": "Intel",
           "last": 112.5,
           "change": 204.88,
-          "vol_ratio": 0.91
+          "vol_ratio": 0.92
         },
         {
           "ticker": "AMD",
@@ -2393,9 +2393,9 @@
         {
           "ticker": "ARM",
           "name": "Arm Holdings",
-          "last": 302.9,
-          "change": 177.1,
-          "vol_ratio": 0.49
+          "last": 302.56,
+          "change": 176.79,
+          "vol_ratio": 0.58
         },
         {
           "ticker": "FTNT",
@@ -2407,16 +2407,16 @@
         {
           "ticker": "CRWD",
           "name": "CrowdStrike",
-          "last": 272.67,
-          "change": 132.67,
-          "vol_ratio": 0.46
+          "last": 278.86,
+          "change": 137.96,
+          "vol_ratio": 0.76
         },
         {
           "ticker": "PANW",
           "name": "Palo Alto Networks",
-          "last": 406.76,
-          "change": 120.83,
-          "vol_ratio": 0.71
+          "last": 419.91,
+          "change": 127.96,
+          "vol_ratio": 0.88
         },
         {
           "ticker": "AMAT",
@@ -2428,18 +2428,18 @@
         {
           "ticker": "DDOG",
           "name": "Datadog",
-          "last": 276.42,
-          "change": 103.26,
-          "vol_ratio": 0.7
+          "last": 278.24,
+          "change": 104.6,
+          "vol_ratio": 0.53
         }
       ],
       "losers": [
         {
           "ticker": "TTD",
           "name": "The Trade Desk",
-          "last": 11.98,
-          "change": -68.44,
-          "vol_ratio": 0.95
+          "last": 11.92,
+          "change": -68.6,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "CSGP",
@@ -2451,9 +2451,9 @@
         {
           "ticker": "APP",
           "name": "AppLovin",
-          "last": 281.97,
-          "change": -58.15,
-          "vol_ratio": 1.31
+          "last": 278.78,
+          "change": -58.63,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "INTU",
@@ -2493,9 +2493,9 @@
         {
           "ticker": "PDD",
           "name": "PDD Holdings",
-          "last": 77.9,
-          "change": -31.3,
-          "vol_ratio": 0.82
+          "last": 78.4,
+          "change": -30.86,
+          "vol_ratio": 0.67
         },
         {
           "ticker": "CTSH",
@@ -2520,7 +2520,7 @@
           "name": "Marvell Technology",
           "last": 287.01,
           "change": 223.46,
-          "vol_ratio": 2.96
+          "vol_ratio": 2.97
         },
         {
           "ticker": "AMD",
@@ -2534,7 +2534,7 @@
           "name": "Intel",
           "last": 112.5,
           "change": 207.46,
-          "vol_ratio": 0.91
+          "vol_ratio": 0.92
         },
         {
           "ticker": "AMAT",
@@ -2542,6 +2542,13 @@
           "last": 530.27,
           "change": 138.13,
           "vol_ratio": 0.78
+        },
+        {
+          "ticker": "CRWD",
+          "name": "CrowdStrike",
+          "last": 278.86,
+          "change": 124.91,
+          "vol_ratio": 0.76
         },
         {
           "ticker": "LRCX",
@@ -2558,34 +2565,27 @@
           "vol_ratio": 1.07
         },
         {
-          "ticker": "CRWD",
-          "name": "CrowdStrike",
-          "last": 272.67,
-          "change": 119.92,
-          "vol_ratio": 0.46
+          "ticker": "PANW",
+          "name": "Palo Alto Networks",
+          "last": 419.91,
+          "change": 97.53,
+          "vol_ratio": 0.88
         },
         {
           "ticker": "ARM",
           "name": "Arm Holdings",
-          "last": 302.9,
-          "change": 93.89,
-          "vol_ratio": 0.49
-        },
-        {
-          "ticker": "PANW",
-          "name": "Palo Alto Networks",
-          "last": 406.76,
-          "change": 91.34,
-          "vol_ratio": 0.71
+          "last": 302.56,
+          "change": 93.68,
+          "vol_ratio": 0.58
         }
       ],
       "losers": [
         {
           "ticker": "TTD",
           "name": "The Trade Desk",
-          "last": 11.98,
-          "change": -77.46,
-          "vol_ratio": 0.95
+          "last": 11.92,
+          "change": -77.57,
+          "vol_ratio": 0.53
         },
         {
           "ticker": "CSGP",
@@ -2611,9 +2611,9 @@
         {
           "ticker": "APP",
           "name": "AppLovin",
-          "last": 281.97,
-          "change": -51.96,
-          "vol_ratio": 1.31
+          "last": 278.78,
+          "change": -52.51,
+          "vol_ratio": 0.8
         },
         {
           "ticker": "LULU",
@@ -2625,16 +2625,16 @@
         {
           "ticker": "PDD",
           "name": "PDD Holdings",
-          "last": 77.9,
-          "change": -42.01,
-          "vol_ratio": 0.82
+          "last": 78.4,
+          "change": -41.64,
+          "vol_ratio": 0.67
         },
         {
           "ticker": "NFLX",
           "name": "Netflix",
           "last": 68.69,
           "change": -40.95,
-          "vol_ratio": 0.98
+          "vol_ratio": 0.99
         },
         {
           "ticker": "CPRT",
@@ -2644,11 +2644,11 @@
           "vol_ratio": 1.01
         },
         {
-          "ticker": "ZS",
-          "name": "Zscaler",
-          "last": 201.8,
-          "change": -33.89,
-          "vol_ratio": 0.67
+          "ticker": "ADBE",
+          "name": "Adobe",
+          "last": 238.12,
+          "change": -31.99,
+          "vol_ratio": 0.48
         }
       ]
     }
